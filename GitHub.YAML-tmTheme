@@ -246,7 +246,7 @@ settings:
   scope: markup.inserted
   settings:
     background: '#eaffea'
-    foreground: '#2e7d32'
+    foreground: '#1A6C21'
 
 - name: Log Entry
   scope: meta.line.entry.logfile, meta.line.exit.logfile
