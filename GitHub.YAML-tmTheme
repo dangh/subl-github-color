@@ -227,12 +227,13 @@ settings:
 - name: diff.header
   scope: meta.diff, meta.diff.header, entity.name.namespace
   settings:
-    foreground: '#969896'
+    background: '#f3f8ff'
+    foreground: '#1b1f234d'
 
 - name: diff.deleted
   scope: markup.deleted
   settings:
-    background: '#420E09FF'
+    background: '#ffecec'
     foreground: '#a71d5d'
 
 - name: diff.changed
@@ -244,8 +245,8 @@ settings:
 - name: diff.inserted
   scope: markup.inserted
   settings:
-    background: '#253B22FF'
-    foreground: '#F8F8F8FF'
+    background: '#eaffea'
+    foreground: '#2e7d32'
 
 - name: Log Entry
   scope: meta.line.entry.logfile, meta.line.exit.logfile
