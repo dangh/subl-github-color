@@ -28,7 +28,7 @@
 				<key>findHighlightForeground</key>
 				<string>#000000</string>
 				<key>foreground</key>
-				<string>#33333340</string>
+				<string>#33333330</string>
 				<key>gutterForeground</key>
 				<string>#b7b7b7</string>
 				<key>invisibles</key>
