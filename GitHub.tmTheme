@@ -596,7 +596,7 @@
 			<key>name</key>
 			<string>JSON Key</string>
 			<key>scope</key>
-			<string>string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell</string>
+			<string>string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell, variable.other.readwrite.property.object-literal, variable.other.readwrite.property.shorthand</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

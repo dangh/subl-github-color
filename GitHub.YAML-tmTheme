@@ -272,7 +272,7 @@ settings:
     foreground: '#183691ee'
 
 - name: JSON Key
-  scope: string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell
+  scope: string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell, variable.other.readwrite.property.object-literal, variable.other.readwrite.property.shorthand
   settings:
     foreground: '#0086b3'
 
