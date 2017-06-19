@@ -188,7 +188,7 @@ settings:
     foreground: '#a71d5d'
 
 - name: Library class/type
-  scope: support.type, support.class, variable.language
+  scope: support.type, support.class, variable.language, support.variable
   settings:
     foreground: '#ed6a43'
 
