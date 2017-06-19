@@ -266,7 +266,7 @@ settings:
     foreground: '#183691'
 
 - name: String constant
-  scope: string.quoted.constant
+  scope: string.quoted.constant, string.interpolated, string.constant
   settings:
     background: '#b4d9fd33'
     foreground: '#183691ee'
