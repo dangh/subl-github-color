@@ -220,7 +220,7 @@
 			<key>name</key>
 			<string>Attribute</string>
 			<key>scope</key>
-			<string>entity.other.attribute-name</string>
+			<string>entity.other.attribute-name, variable.other.attribute</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>

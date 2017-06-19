@@ -100,7 +100,7 @@ settings:
     background: '#fafafa'
 
 - name: Attribute
-  scope: entity.other.attribute-name
+  scope: entity.other.attribute-name, variable.other.attribute
   settings:
     fontStyle: italic
     foreground: '#795da3'
