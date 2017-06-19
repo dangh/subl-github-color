@@ -159,17 +159,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Support</string>
-			<key>scope</key>
-			<string>support</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#8A5C8DFF</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Function arg</string>
 			<key>scope</key>
 			<string>meta.function.argument, variable.parameter, meta.parens.c</string>

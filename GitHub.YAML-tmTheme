@@ -72,11 +72,6 @@ settings:
   settings:
     foreground: '#a71d5d'
 
-- name: Support
-  scope: support
-  settings:
-    foreground: '#8A5C8DFF'
-
 - name: Function arg
   scope: meta.function.argument, variable.parameter, meta.parens.c
   settings:
