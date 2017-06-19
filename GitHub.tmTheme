@@ -616,6 +616,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>keyword.control.flow</string>
+			<key>scope</key>
+			<string>keyword.control.flow</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#ffecec</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>meta.tag entity</string>
 			<key>scope</key>
 			<string>entity.name.subtag</string>

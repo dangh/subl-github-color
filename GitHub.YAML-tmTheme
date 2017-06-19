@@ -286,6 +286,11 @@ settings:
 #   settings:
 #     foreground: '#ed6a43'
 
+- name: keyword.control.flow
+  scope: keyword.control.flow
+  settings:
+    background: '#ffecec'
+
 - name: meta.tag entity
   scope: entity.name.subtag
   settings:
