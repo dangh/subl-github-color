@@ -603,6 +603,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Punctuation separator</string>
+			<key>scope</key>
+			<string>punctuation.separator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#555</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>meta.tag entity</string>
 			<key>scope</key>
 			<string>entity.name.subtag</string>

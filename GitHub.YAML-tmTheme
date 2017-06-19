@@ -275,6 +275,11 @@ settings:
   settings:
     foreground: '#0086b3'
 
+- name: Punctuation separator
+  scope: punctuation.separator
+  settings:
+    foreground: '#555'
+
 # - name: react component
 #   scope: variable.other.react
 #   settings:
