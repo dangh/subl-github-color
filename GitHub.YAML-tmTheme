@@ -1,0 +1,296 @@
+# [PackageDev] target_format: plist, ext: tmTheme
+name: GitHub
+uuid: 6ed43c43-a46d-4895-ae3b-e1c10b795854
+
+settings:
+- settings:
+    activeGuide: '#9D550FB0'
+    background: '#fff'
+    bracketContentsForeground: '#FC605C'
+    bracketContentsOptions: underline foreground
+    bracketsForeground: '#FC605C'
+    bracketsOptions: underline foreground
+    caret: '#1BC7FB'
+    findHighlight: '#FFE792'
+    findHighlightForeground: '#000000'
+    foreground: '#33333340'
+    gutterForeground: '#b7b7b7'
+    invisibles: '#3B3A32'
+    lineHighlight: '#f8efc9'
+    selection: '#b3d8fd'
+    selectionBorder: '#b3d8fd'
+    shadow: '#00000044'
+    tagsForeground: '#FC605C'
+    tagsOptions: underline foreground
+- name: comment
+  scope: comment
+  settings:
+    foreground: '#969896'
+
+- name: String
+  scope: string
+  settings:
+    foreground: '#183691'
+
+- name: Built-in constant
+  scope: constant.language
+  settings:
+    foreground: '#00A73E'
+
+- name: User-defined constant
+  scope: constant.character, constant.other
+  settings:
+    foreground: '#00A73E'
+
+- name: Invalid
+  scope: invalid
+  settings:
+    background: '#a71d5d'
+
+- name: constant
+  scope: constant
+  settings:
+    foreground: '#AE81FFA0'
+
+- name: Keyword
+  scope: keyword
+  settings:
+    foreground: '#a71d5d'
+
+- name: constant.numeric
+  scope: constant.numeric
+  settings:
+    foreground: '#00A73E'
+
+- name: Storage
+  scope: storage
+  settings:
+    foreground: '#a71d5d'
+
+- name: storage.type
+  scope: storage.type
+  settings:
+    foreground: '#a71d5d'
+
+- name: Support
+  scope: support
+  settings:
+    foreground: '#8A5C8DFF'
+
+- name: Function arg
+  scope: meta.function.argument, variable.parameter, meta.parens.c
+  settings:
+    foreground: '#FD971F'
+
+- name: invalid.illegal
+  scope: invalid.illegal
+  settings:
+    background: '#562D56BF'
+    foreground: '#FD5FF1FF'
+
+- name: support.function
+  scope: support.function
+  settings:
+    foreground: '#795da3'
+
+- name: meta.tag entity
+  scope: entity.name.tag
+  settings:
+    foreground: '#00A73E'
+
+- name: meta.tag.close entity
+  scope: entity.name.tag.close
+  settings:
+    foreground: '#00A73E'
+    background: '#fafafa'
+
+- name: Attribute
+  scope: entity.other.attribute-name
+  settings:
+    fontStyle: italic
+    foreground: '#795da3'
+
+- name: entity.arrow.function.js
+  scope: entity.arrow.function.js
+  settings:
+    foreground: '#AA00FF'
+
+- name: support.class.error.js
+  scope: support.class.error.js
+  settings:
+    foreground: '#FF5522'
+
+- name: support.class.node.js
+  scope: support.class.node.js
+  settings:
+    foreground: '#4271AE'
+
+- name: support.keyword.node.js
+  scope: support.keyword.node.js
+  settings:
+    fontStyle: bold
+    foreground: '#a71d5d'
+
+- name: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
+  scope: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
+  settings:
+    foreground: '#795da3'
+
+- name: entity.name.accessor.js
+  scope: entity.name.accessor.js
+  settings:
+    foreground: '#795da3'
+
+- name: entity.name.method.js
+  scope: entity.name.method.js
+  settings:
+    foreground: '#795da3'
+
+- name: meta.method.js
+  scope: meta.method.js
+  settings:
+    foreground: '#333'
+
+- name: support.function
+  scope: support.function
+  settings:
+    foreground: '#a71d5d'
+
+- name: Function name
+  scope: entity.name.function
+  settings:
+    foreground: '#795da3'
+
+- name: entity.name.class.js
+  scope: entity.name.class.js
+  settings:
+    foreground: '#ed6a43'
+
+- name: entity.name.extends.js
+  scope: entity.name.extends.js
+  settings:
+    fontStyle: italic
+    foreground: '#00FF99'
+
+- name: entity.other.attribute-name.id
+  scope: entity.other.attribute-name.id
+  settings:
+    foreground: '#795da3'
+
+- name: class name
+  scope: meta.prototype support.class
+  settings:
+    foreground: '#795da3'
+
+- name: Library constant
+  scope: support.constant
+  settings:
+    foreground: '#a71d5d'
+
+- name: Library class/type
+  scope: support.type, support.class, variable.language
+  settings:
+    foreground: '#ed6a43'
+
+- name: js undefined
+  scope: constant.language.undefined.js
+  settings:
+    foreground: '#00A73E'
+
+- name: 'false'
+  scope: constant.language.boolean.false
+  settings:
+    foreground: '#00A73E'
+
+- name: 'true'
+  scope: constant.language.boolean.true
+  settings:
+    foreground: '#00A73E'
+
+- name: js null
+  scope: constant.language.null.js
+  settings:
+    foreground: '#00A73E'
+
+- name: js user-defined constant
+  scope: variable.other.constant, constant.other.user-defined.js
+  settings:
+    background: '#EFF5EE99'
+    foreground: '#00A73E'
+
+- name: Inherited class
+  scope: entity.other.inherited-class
+  settings:
+    fontStyle: italic underline
+    foreground: '#795da3'
+
+- name: diff.header
+  scope: meta.diff, meta.diff.header, entity.name.namespace
+  settings:
+    foreground: '#969896'
+
+- name: diff.deleted
+  scope: markup.deleted
+  settings:
+    background: '#420E09FF'
+    foreground: '#a71d5d'
+
+- name: diff.changed
+  scope: markup.changed
+  settings:
+    background: '#4A410DFF'
+    foreground: '#183691'
+
+- name: diff.inserted
+  scope: markup.inserted
+  settings:
+    background: '#253B22FF'
+    foreground: '#F8F8F8FF'
+
+- name: Log Entry
+  scope: meta.line.entry.logfile, meta.line.exit.logfile
+  settings:
+    background: '#EEEEEE29'
+    foreground: '#F8F8F8FF'
+
+- name: Log Entry Error
+  scope: meta.line.error.logfile
+  settings:
+    background: '#751012'
+    foreground: '#F8F8F8'
+
+- name: JSON String
+  scope: meta.structure.dictionary.json string.quoted.double
+  settings:
+    foreground: '#183691'
+
+- name: String constant
+  scope: string.quoted.constant
+  settings:
+    background: '#b4d9fd33'
+    foreground: '#183691ee'
+
+- name: JSON Key
+  scope: string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell
+  settings:
+    foreground: '#0086b3'
+
+# - name: react component
+#   scope: variable.other.react
+#   settings:
+#     foreground: '#ed6a43'
+
+- name: meta.tag entity
+  scope: entity.name.subtag
+  settings:
+    foreground: '#FC605C'
+
+- name: Bracket Highlighter
+  scope: brackethighlighter.default
+  settings:
+    foreground: '#FC605C'
+
+- name: Bracket dim
+  scope: meta.brace, punctuation.definition.parameters
+  settings:
+    foreground: '#555555'
