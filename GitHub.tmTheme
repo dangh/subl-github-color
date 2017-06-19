@@ -468,7 +468,7 @@
 			<key>name</key>
 			<string>js user-defined constant</string>
 			<key>scope</key>
-			<string>variable.other.constant, constant.other.user-defined.js</string>
+			<string>variable.other.constant, constant.other.user-defined.js, variable.other.readwrite.allCap, variable.other.readwrite.import.allCap, variable.other.readwrite.export.allCap, variable.other.readwrite.property.allCap</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>

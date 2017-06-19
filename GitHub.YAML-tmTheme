@@ -213,7 +213,7 @@ settings:
     foreground: '#00A73E'
 
 - name: js user-defined constant
-  scope: variable.other.constant, constant.other.user-defined.js
+  scope: variable.other.constant, constant.other.user-defined.js, variable.other.readwrite.allCap, variable.other.readwrite.import.allCap, variable.other.readwrite.export.allCap, variable.other.readwrite.property.allCap
   settings:
     background: '#EFF5EE99'
     foreground: '#00A73E'
