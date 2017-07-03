@@ -276,6 +276,12 @@ settings:
   settings:
     foreground: '#555'
 
+- name: variable.other.readwrite.moduleScoped.es
+  scope: variable.other.readwrite.moduleScoped.es
+  settings:
+    fontStyle: italic
+    foreground: '#000'
+
 # - name: react component
 #   scope: variable.other.react
 #   settings:
