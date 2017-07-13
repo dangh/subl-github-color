@@ -13,7 +13,7 @@ settings:
     caret: '#1BC7FB'
     findHighlight: '#FFE792'
     findHighlightForeground: '#000000'
-    foreground: '#33333330'
+    foreground: '#333333'
     gutterForeground: '#b7b7b7'
     invisibles: '#3B3A32'
     lineHighlight: '#f8efc9'
