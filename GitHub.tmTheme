@@ -660,6 +660,17 @@
 				<string>#555555</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>meta.embedded.sql</string>
+			<key>scope</key>
+			<string>meta.embedded.sql</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#ffecec</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>6ed43c43-a46d-4895-ae3b-e1c10b795854</string>

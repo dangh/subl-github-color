@@ -306,3 +306,8 @@ settings:
   scope: meta.brace, punctuation.definition.parameters
   settings:
     foreground: '#555555'
+
+- name: meta.embedded.sql
+  scope: meta.embedded.sql
+  settings:
+    background: '#ffecec'
