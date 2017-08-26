@@ -194,7 +194,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>meta.tag entity</string>
+			<string>entity.name.tag</string>
 			<key>scope</key>
 			<string>entity.name.tag</string>
 			<key>settings</key>
@@ -205,15 +205,24 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>meta.tag.close entity</string>
+			<string>entity.name.tag.close</string>
 			<key>scope</key>
 			<string>entity.name.tag.close</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#fafafa</string>
 				<key>foreground</key>
-				<string>#00A73E</string>
+				<string>#FF3821</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>entity.name.tag.html</string>
+			<key>scope</key>
+			<string>entity.name.tag.html</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0086B3</string>
 			</dict>
 		</dict>
 		<dict>

@@ -88,16 +88,20 @@ settings:
   settings:
     foreground: '#795da3'
 
-- name: meta.tag entity
+- name: entity.name.tag
   scope: entity.name.tag
   settings:
     foreground: '#00A73E'
 
-- name: meta.tag.close entity
+- name: entity.name.tag.close
   scope: entity.name.tag.close
   settings:
-    foreground: '#00A73E'
-    background: '#fafafa'
+    foreground: '#FF3821'
+
+- name: meta.name.tag.html
+  scope: entity.name.tag.html
+  settings:
+    foreground: '#0086B3'
 
 - name: Attribute
   scope: entity.other.attribute-name, variable.other.attribute
