@@ -671,9 +671,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>meta.embedded.sql</string>
+			<string>source.php source.sql, source.php source.sql string.quoted</string>
 			<key>scope</key>
-			<string>meta.embedded.sql</string>
+			<string>source.php source.sql, source.php source.sql string.quoted</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>

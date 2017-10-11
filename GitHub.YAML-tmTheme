@@ -311,7 +311,7 @@ settings:
   settings:
     foreground: '#555555'
 
-- name: meta.embedded.sql
-  scope: meta.embedded.sql
+- name: source.php source.sql, source.php source.sql string.quoted
+  scope: source.php source.sql, source.php source.sql string.quoted
   settings:
     background: '#ffecec'
