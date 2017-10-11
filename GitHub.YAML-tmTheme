@@ -97,13 +97,9 @@ settings:
 
 - name: entity.name.tag.close
   scope: entity.name.tag.close
-  settings:
-    foreground: '#FF3821'
 
-- name: meta.name.tag.html
+- name: entity.name.tag.html
   scope: entity.name.tag.html
-  settings:
-    foreground: '#0086B3'
 
 - name: Attribute
   scope: entity.other.attribute-name, variable.other.attribute

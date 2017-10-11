@@ -212,22 +212,12 @@
 			<string>entity.name.tag.close</string>
 			<key>scope</key>
 			<string>entity.name.tag.close</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#FF3821</string>
-			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>entity.name.tag.html</string>
 			<key>scope</key>
 			<string>entity.name.tag.html</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#0086B3</string>
-			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
