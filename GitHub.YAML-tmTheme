@@ -4,7 +4,7 @@ uuid: 6ed43c43-a46d-4895-ae3b-e1c10b795854
 
 settings:
 - settings:
-    activeGuide: '#33333333'
+    activeGuide: '#00000030'
     background: '#fff'
     bracketContentsForeground: '#FC605C'
     bracketContentsOptions: underline foreground
@@ -14,12 +14,14 @@ settings:
     findHighlight: '#FFE792'
     findHighlightForeground: '#000000'
     foreground: '#333333'
+    guide: '#00000010'
     gutterForeground: '#b7b7b7'
     invisibles: '#3B3A32'
     lineHighlight: '#f8efc9'
     selection: '#b3d8fd'
     selectionBorder: '#b3d8fd'
     shadow: '#00000044'
+    stackGuide: '#00000020'
     tagsForeground: '#FC605C'
     tagsOptions: underline foreground
 - name: comment
