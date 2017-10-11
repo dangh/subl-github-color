@@ -686,6 +686,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>string meta.embedded</string>
+			<key>scope</key>
+			<string>string meta.embedded</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#fff</string>
+				<key>foreground</key>
+				<string>#333</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>meta.flowtype</string>
 			<key>scope</key>
 			<string>meta.flowtype</string>

@@ -318,6 +318,12 @@ settings:
   settings:
     background: '#ffecec'
 
+- name: string meta.embedded
+  scope: string meta.embedded
+  settings:
+    background: '#fff'
+    foreground: '#333'
+
 - name: meta.flowtype
   scope: meta.flowtype
   settings:
