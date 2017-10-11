@@ -221,11 +221,17 @@ settings:
     fontStyle: italic underline
     foreground: '#795da3'
 
-- name: diff.header
-  scope: meta.diff, meta.diff.header, entity.name.namespace
+- name: meta.diff.range
+  scope: meta.diff.range
   settings:
-    background: '#f3f8ff'
-    foreground: '#1b1f234d'
+    background: '#f1f8ff'
+    foreground: '#1b1f2380'
+
+- name: meta.diff.header
+  scope: meta.diff.header
+  settings:
+    background: '#dbedff'
+    foreground: '#444d56'
 
 - name: diff.deleted
   scope: markup.deleted

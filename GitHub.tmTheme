@@ -484,15 +484,28 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>diff.header</string>
+			<string>meta.diff.range</string>
 			<key>scope</key>
-			<string>meta.diff, meta.diff.header, entity.name.namespace</string>
+			<string>meta.diff.range</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#f3f8ff</string>
+				<string>#f1f8ff</string>
 				<key>foreground</key>
-				<string>#969896</string>
+				<string>#1b1f2380</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>meta.diff.header</string>
+			<key>scope</key>
+			<string>meta.diff.header</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#dbedff</string>
+				<key>foreground</key>
+				<string>#444d56</string>
 			</dict>
 		</dict>
 		<dict>
