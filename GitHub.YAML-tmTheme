@@ -317,3 +317,19 @@ settings:
   scope: source.php source.sql, source.php source.sql string.quoted
   settings:
     background: '#ffecec'
+
+- name: meta.flowtype
+  scope: meta.flowtype
+  settings:
+    background: '#fcf8e5'
+    foreground: '#b87705'
+
+- name: punctuation.flowtype
+  scope: punctuation.flowtype
+  settings:
+    foreground: '#8b6e11'
+
+- name: constant.other.primitive.flowtype
+  scope: constant.other.primitive.flowtype
+  settings:
+    foreground: '#a61c83'

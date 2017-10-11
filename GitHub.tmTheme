@@ -684,6 +684,41 @@
 				<string>#ffecec</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>meta.flowtype</string>
+			<key>scope</key>
+			<string>meta.flowtype</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#fcf8e5</string>
+				<key>foreground</key>
+				<string>#b87705</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>punctuation.flowtype</string>
+			<key>scope</key>
+			<string>punctuation.flowtype</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#8b6e11</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>constant.other.primitive.flowtype</string>
+			<key>scope</key>
+			<string>constant.other.primitive.flowtype</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a61c83</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>6ed43c43-a46d-4895-ae3b-e1c10b795854</string>
