@@ -16,7 +16,7 @@ settings:
     foreground: '#333333'
     guide: '#00000010'
     gutterForeground: '#b7b7b7'
-    invisibles: '#3B3A32'
+    invisibles: '#00000020'
     lineHighlight: '#f8efc9'
     selection: '#b3d8fd'
     selectionBorder: '#b3d8fd'
