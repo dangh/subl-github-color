@@ -10,7 +10,7 @@
 			<key>settings</key>
 			<dict>
 				<key>activeGuide</key>
-				<string>#00000030</string>
+				<string>#000000</string>
 				<key>background</key>
 				<string>#fff</string>
 				<key>bracketContentsForeground</key>
@@ -34,7 +34,7 @@
 				<key>gutterForeground</key>
 				<string>#b7b7b7</string>
 				<key>invisibles</key>
-				<string>#00000020</string>
+				<string>#00000010</string>
 				<key>lineHighlight</key>
 				<string>#f8efc9</string>
 				<key>selection</key>
@@ -44,7 +44,7 @@
 				<key>shadow</key>
 				<string>#00000044</string>
 				<key>stackGuide</key>
-				<string>#00000020</string>
+				<string>#00000010</string>
 				<key>tagsForeground</key>
 				<string>#FC605C</string>
 				<key>tagsOptions</key>
