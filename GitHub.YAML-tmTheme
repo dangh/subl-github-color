@@ -91,7 +91,7 @@ settings:
     foreground: '#795da3'
 
 - name: entity.name.tag
-  scope: entity.name.tag
+  scope: entity.name.tag, entity.name.class
   settings:
     foreground: '#00A73E'
 
