@@ -154,7 +154,7 @@ settings:
     foreground: '#a71d5d'
 
 - name: Function name
-  scope: entity.name.function
+  scope: entity.name.function, entity.name.method
   settings:
     foreground: '#795da3'
 

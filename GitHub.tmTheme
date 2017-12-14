@@ -337,7 +337,7 @@
 			<key>name</key>
 			<string>Function name</string>
 			<key>scope</key>
-			<string>entity.name.function</string>
+			<string>entity.name.function, entity.name.method</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
