@@ -25,9 +25,14 @@ settings:
     tagsForeground: '#FC605C'
     tagsOptions: underline foreground
 - name: comment
-  scope: comment
+  scope: comment, punctuation.definition.eslint
   settings:
     foreground: '#969896'
+
+- name: semicolon
+  scope: punctuation.terminator.statement
+  settings:
+    foreground: '#ddd'
 
 - name: String
   scope: string
@@ -55,7 +60,7 @@ settings:
     foreground: '#AE81FFA0'
 
 - name: Keyword
-  scope: keyword
+  scope: keyword, punctuation.accessor
   settings:
     foreground: '#a71d5d'
 
@@ -159,7 +164,7 @@ settings:
     foreground: '#795da3'
 
 - name: entity.name.class.js
-  scope: entity.name.class.js
+  scope: entity.name.class.js, meta.instance.constructor
   settings:
     foreground: '#ed6a43'
 
@@ -185,7 +190,7 @@ settings:
     foreground: '#a71d5d'
 
 - name: Library class/type
-  scope: support.type, support.class, variable.language, support.variable, support.function.external
+  scope: support.type, support.class, variable.language, support.variable, support.function.external, variable.other.object.dollar.only
   settings:
     foreground: '#ed6a43'
 
@@ -210,9 +215,14 @@ settings:
     foreground: '#00A73E'
 
 - name: js user-defined constant
-  scope: variable.other.constant, constant.other.user-defined.js, variable.other.readwrite.allCap, variable.other.readwrite.import.allCap, variable.other.readwrite.export.allCap, variable.other.readwrite.property.allCap, variable.other.readwrite.property.object-literal.allCap
+  scope: variable.other.constant, constant.other.user-defined.js, variable.other.readwrite.allCap, variable.other.readwrite.import.allCap, variable.other.readwrite.export.allCap, variable.other.readwrite.property.allCap, variable.other.readwrite.property.object-literal.allCap, entity.name.constant
   settings:
     background: '#EFF5EE99'
+    foreground: '#00A73E'
+
+- name: js decorator
+  scope: variable.other.readwrite.decorator, variable.annotation
+  settings:
     foreground: '#00A73E'
 
 - name: Inherited class
@@ -269,18 +279,18 @@ settings:
     foreground: '#183691'
 
 - name: String constant
-  scope: string.quoted.constant, string.interpolated, string.constant, string.quoted, string.attribute.jsx
+  scope: string.quoted.constant, string.interpolated, string.constant, string.quoted, string.attribute.jsx, string.template
   settings:
     background: '#b4d9fd33'
     foreground: '#183691ee'
 
 - name: JSON Key
-  scope: string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell, variable.other.readwrite.property.object-literal, variable.other.readwrite.property.shorthand
+  scope: string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell, variable.other.readwrite.property.object-literal, variable.other.readwrite.property.shorthand, meta.object-literal.key, object.property
   settings:
     foreground: '#0086b3'
 
 - name: Punctuation separator
-  scope: punctuation.separator
+  scope: punctuation.separator, keyword.operator.other.association
   settings:
     foreground: '#555'
 

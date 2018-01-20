@@ -55,11 +55,22 @@
 			<key>name</key>
 			<string>comment</string>
 			<key>scope</key>
-			<string>comment</string>
+			<string>comment, punctuation.definition.eslint</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#969896</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>semicolon</string>
+			<key>scope</key>
+			<string>punctuation.terminator.statement</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ddd</string>
 			</dict>
 		</dict>
 		<dict>
@@ -121,7 +132,7 @@
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword</string>
+			<string>keyword, punctuation.accessor</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -348,7 +359,7 @@
 			<key>name</key>
 			<string>entity.name.class.js</string>
 			<key>scope</key>
-			<string>entity.name.class.js</string>
+			<string>entity.name.class.js, meta.instance.constructor</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -405,7 +416,7 @@
 			<key>name</key>
 			<string>Library class/type</string>
 			<key>scope</key>
-			<string>support.type, support.class, variable.language, support.variable, support.function.external</string>
+			<string>support.type, support.class, variable.language, support.variable, support.function.external, variable.other.object.dollar.only</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -460,11 +471,22 @@
 			<key>name</key>
 			<string>js user-defined constant</string>
 			<key>scope</key>
-			<string>variable.other.constant, constant.other.user-defined.js, variable.other.readwrite.allCap, variable.other.readwrite.import.allCap, variable.other.readwrite.export.allCap, variable.other.readwrite.property.allCap, variable.other.readwrite.property.object-literal.allCap</string>
+			<string>variable.other.constant, constant.other.user-defined.js, variable.other.readwrite.allCap, variable.other.readwrite.import.allCap, variable.other.readwrite.export.allCap, variable.other.readwrite.property.allCap, variable.other.readwrite.property.object-literal.allCap, entity.name.constant</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
 				<string>#EFF5EE99</string>
+				<key>foreground</key>
+				<string>#00A73E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>js decorator</string>
+			<key>scope</key>
+			<string>variable.other.readwrite.decorator, variable.annotation</string>
+			<key>settings</key>
+			<dict>
 				<key>foreground</key>
 				<string>#00A73E</string>
 			</dict>
@@ -588,7 +610,7 @@
 			<key>name</key>
 			<string>String constant</string>
 			<key>scope</key>
-			<string>string.quoted.constant, string.interpolated, string.constant, string.quoted, string.attribute.jsx</string>
+			<string>string.quoted.constant, string.interpolated, string.constant, string.quoted, string.attribute.jsx, string.template</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -601,7 +623,7 @@
 			<key>name</key>
 			<string>JSON Key</string>
 			<key>scope</key>
-			<string>string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell, variable.other.readwrite.property.object-literal, variable.other.readwrite.property.shorthand</string>
+			<string>string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell, variable.other.readwrite.property.object-literal, variable.other.readwrite.property.shorthand, meta.object-literal.key, object.property</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -612,7 +634,7 @@
 			<key>name</key>
 			<string>Punctuation separator</string>
 			<key>scope</key>
-			<string>punctuation.separator</string>
+			<string>punctuation.separator, keyword.operator.other.association</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
