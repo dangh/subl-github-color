@@ -658,7 +658,7 @@
 			<key>name</key>
 			<string>keyword.control.flow</string>
 			<key>scope</key>
-			<string>keyword.control.flow, storage.type.module.export.es</string>
+			<string>keyword.control.flow.return, keyword.control.flow.throw, storage.type.function.arrow</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>

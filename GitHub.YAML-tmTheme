@@ -306,7 +306,7 @@ settings:
 #     foreground: '#ed6a43'
 
 - name: keyword.control.flow
-  scope: keyword.control.flow, storage.type.module.export.es
+  scope: keyword.control.flow.return, keyword.control.flow.throw, storage.type.function.arrow
   settings:
     background: '#ffecec'
 
