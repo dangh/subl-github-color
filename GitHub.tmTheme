@@ -416,7 +416,7 @@
 			<key>name</key>
 			<string>Library class/type</string>
 			<key>scope</key>
-			<string>support.type, support.class, variable.language, support.variable, support.function.external, variable.other.object.dollar.only</string>
+			<string>support.type, support.class, variable.language, support.variable, support.function.external, variable.other.dollar.only, variable.other.object.dollar.only</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

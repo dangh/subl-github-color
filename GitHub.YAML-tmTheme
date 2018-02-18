@@ -190,7 +190,7 @@ settings:
     foreground: '#a71d5d'
 
 - name: Library class/type
-  scope: support.type, support.class, variable.language, support.variable, support.function.external, variable.other.object.dollar.only
+  scope: support.type, support.class, variable.language, support.variable, support.function.external, variable.other.dollar.only, variable.other.object.dollar.only
   settings:
     foreground: '#ed6a43'
 
