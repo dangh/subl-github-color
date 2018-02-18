@@ -351,3 +351,33 @@ settings:
   scope: constant.other.primitive.flowtype
   settings:
     foreground: '#a61c83'
+
+- name: region.redish
+  scope: region.redish
+  settings:
+    background: '#f9f2f4'
+    foreground: '#c7254e'
+
+- name: region.yellowish
+  scope: region.yellowish
+  settings:
+    background: '#fcfbf5'
+    foreground: '#8b6e11'
+
+- name: region.greenish
+  scope: region.greenish
+  settings:
+    background: '#EFF5EE99'
+    foreground: '#00A73E'
+
+- name: region.bluish
+  scope: region.bluish
+  settings:
+    background: '#b4d9fd33'
+    foreground: '#183691ee'
+
+- name: region.purplish
+  scope: region.purplish
+  settings:
+    background: '#d4d4f7'
+    foreground: '#5b5be0'

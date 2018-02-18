@@ -757,6 +757,71 @@
 				<string>#a61c83</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>region.redish</string>
+			<key>scope</key>
+			<string>region.redish</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#f9f2f4</string>
+				<key>foreground</key>
+				<string>#c7254e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>region.yellowish</string>
+			<key>scope</key>
+			<string>region.yellowish</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#fcfbf5</string>
+				<key>foreground</key>
+				<string>#8b6e11</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>region.greenish</string>
+			<key>scope</key>
+			<string>region.greenish</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#EFF5EE99</string>
+				<key>foreground</key>
+				<string>#00A73E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>region.bluish</string>
+			<key>scope</key>
+			<string>region.bluish</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#b4d9fd33</string>
+				<key>foreground</key>
+				<string>#183691ee</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>region.purplish</string>
+			<key>scope</key>
+			<string>region.purplish</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#d4d4f7</string>
+				<key>foreground</key>
+				<string>#5b5be0</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>6ed43c43-a46d-4895-ae3b-e1c10b795854</string>
