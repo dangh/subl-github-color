@@ -252,8 +252,8 @@ settings:
 - name: diff.changed
   scope: markup.changed
   settings:
-    background: '#4A410DFF'
-    foreground: '#183691'
+    background: '#fcfbf5'
+    foreground: '#8b6e11'
 
 - name: diff.inserted
   scope: markup.inserted
