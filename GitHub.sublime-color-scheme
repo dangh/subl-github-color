@@ -1,0 +1,437 @@
+{
+  "name": "GitHub",
+  "author": "DangH",
+  "variables": {
+    "black": "hsl(0, 0%, 0%)",
+    "black2": "hsl(210, 13%, 12%)",
+    "blue": "hsl(195, 100%, 35%)",
+    "blue2": "hsl(194, 97%, 55%)",
+    "blue3": "hsl(210, 95%, 85%)",
+    "blue4": "hsl(210, 95%, 85%)",
+    "blue5": "hsl(214, 45%, 47%)",
+    "blue6": "hsl(225, 72%, 33%)",
+    "blue7": "hsl(210, 12%, 30%)",
+    "blue8": "hsl(156, 100%, 50%)",
+    "green": "hsl(125, 61%, 26%)",
+    "green2": "hsl(142, 100%, 33%)",
+    "grey": "hsl(120, 1%, 59%)",
+    "grey2": "hsl(0, 0%, 72%)",
+    "grey3": "hsl(0, 0%, 20%)",
+    "grey4": "hsl(0, 0%, 33%)",
+    "orange": "hsl(38, 95%, 37%)",
+    "orange2": "hsl(32, 98%, 56%)",
+    "orange3": "hsl(46, 78%, 31%)",
+    "orange4": "hsl(47, 100%, 79%)",
+    "pink": "hsl(315, 71%, 38%)",
+    "pink2": "hsl(305, 98%, 68%)",
+    "pink3": "hsl(332, 70%, 38%)",
+    "pink4": "hsl(300, 31%, 26%)",
+    "purple": "hsl(280, 100%, 50%)",
+    "purple2": "hsl(261, 100%, 75%)",
+    "purple3": "hsl(264, 28%, 50%)",
+    "purple4": "hsl(240, 68%, 62%)",
+    "red": "hsl(359, 76%, 26%)",
+    "red2": "hsl(2, 96%, 67%)",
+    "red3": "hsl(14, 83%, 60%)",
+    "red4": "hsl(14, 100%, 57%)",
+    "red5": "hsl(345, 69%, 46%)",
+    "white": "hsl(0, 100%, 96%)",
+    "white2": "hsl(0, 0%, 100%)",
+    "white3": "hsl(0, 0%, 97%)",
+    "white4": "hsl(0, 0%, 93%)",
+    "white5": "hsl(0, 0%, 87%)",
+    "white6": "hsl(343, 37%, 96%)",
+    "white7": "hsl(49, 77%, 88%)",
+    "white8": "hsl(50, 79%, 94%)",
+    "white9": "hsl(51, 54%, 97%)",
+    "white10": "hsl(120, 100%, 96%)",
+    "white11": "hsl(240, 69%, 90%)",
+    "white12": "hsl(111, 26%, 95%)",
+    "white13": "hsl(210, 100%, 97%)",
+    "white14": "hsl(210, 100%, 93%)"
+  },
+  "globals": {
+    "foreground": "var(grey3)",
+    "background": "var(white2)",
+    "caret": "var(blue2)",
+    "invisibles": "color(var(black) alpha(0.063))",
+    "line_highlight": "var(white7)",
+    "selection": "var(blue4)",
+    "selection_border": "var(blue4)",
+    "gutter_foreground": "var(grey2)",
+    "shadow": "color(var(black) alpha(0.27))",
+    "guide": "color(var(black) alpha(0.063))",
+    "active_guide": "var(black)",
+    "stack_guide": "color(var(black) alpha(0.063))",
+    "find_highlight_foreground": "var(black)",
+    "find_highlight": "var(orange4)",
+    "brackets_options": "underline foreground",
+    "brackets_foreground": "var(red2)",
+    "bracket_contents_options": "underline foreground",
+    "bracket_contents_foreground": "var(red2)",
+    "tags_options": "underline foreground",
+    "tags_foreground": "var(red2)"
+  },
+  "rules": [
+    {
+      "name": "comment",
+      "scope": "comment, punctuation.definition.eslint",
+      "foreground": "var(grey)"
+    },
+    {
+      "name": "semicolon",
+      "scope": "punctuation.terminator.statement",
+      "foreground": "var(white5)"
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "foreground": "var(blue6)"
+    },
+    {
+      "name": "Built-in constant",
+      "scope": "constant.language",
+      "foreground": "var(green2)"
+    },
+    {
+      "name": "User-defined constant",
+      "scope": "constant.character, constant.other",
+      "foreground": "var(green2)"
+    },
+    {
+      "name": "Invalid",
+      "scope": "invalid",
+      "background": "var(pink3)"
+    },
+    {
+      "name": "constant",
+      "scope": "constant",
+      "foreground": "color(var(purple2) alpha(0.63))"
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword, punctuation.accessor",
+      "foreground": "var(pink3)"
+    },
+    {
+      "name": "constant.numeric",
+      "scope": "constant.numeric",
+      "foreground": "var(green2)"
+    },
+    {
+      "name": "Storage",
+      "scope": "storage",
+      "foreground": "var(pink3)"
+    },
+    {
+      "name": "storage.type",
+      "scope": "storage.type",
+      "foreground": "var(pink3)"
+    },
+    {
+      "name": "Function arg",
+      "scope": "meta.function.argument, variable.parameter, meta.parens.c",
+      "foreground": "var(orange2)"
+    },
+    {
+      "name": "invalid.illegal",
+      "scope": "invalid.illegal",
+      "foreground": "var(pink2)",
+      "background": "color(var(pink4) alpha(0.75))"
+    },
+    {
+      "name": "support.function",
+      "scope": "support.function",
+      "foreground": "var(purple3)"
+    },
+    {
+      "name": "entity.name.tag",
+      "scope": "entity.name.tag, entity.name.tag support.class, entity.name.class",
+      "foreground": "var(green2)"
+    },
+    {
+      "name": "entity.name.tag.close",
+      "scope": "entity.name.tag.close"
+    },
+    {
+      "name": "entity.name.tag.html",
+      "scope": "entity.name.tag.html"
+    },
+    {
+      "name": "Attribute",
+      "scope": "entity.other.attribute-name, variable.other.attribute",
+      "foreground": "var(purple3)",
+      "font_style": "italic"
+    },
+    {
+      "name": "entity.arrow.function.js",
+      "scope": "entity.arrow.function.js",
+      "foreground": "var(purple)"
+    },
+    {
+      "name": "support.class.error.js",
+      "scope": "support.class.error.js",
+      "foreground": "var(red4)"
+    },
+    {
+      "name": "support.class.node.js",
+      "scope": "support.class.node.js",
+      "foreground": "var(blue5)"
+    },
+    {
+      "name": "support.keyword.node.js",
+      "scope": "support.keyword.node.js",
+      "foreground": "var(pink3)",
+      "font_style": "bold"
+    },
+    {
+      "name": "entity.name.module.js, variable.import.parameter.js, variable.other.class.js",
+      "scope": "entity.name.module.js, variable.import.parameter.js, variable.other.class.js",
+      "foreground": "var(purple3)"
+    },
+    {
+      "name": "entity.name.accessor.js",
+      "scope": "entity.name.accessor.js",
+      "foreground": "var(purple3)"
+    },
+    {
+      "name": "entity.name.method.js",
+      "scope": "entity.name.method.js",
+      "foreground": "var(purple3)"
+    },
+    {
+      "name": "meta.method.js",
+      "scope": "meta.method.js",
+      "foreground": "var(grey3)"
+    },
+    {
+      "name": "support.function",
+      "scope": "support.function",
+      "foreground": "var(pink3)"
+    },
+    {
+      "name": "Function name",
+      "scope": "entity.name.function, entity.name.method",
+      "foreground": "var(purple3)"
+    },
+    {
+      "name": "entity.name.class.js",
+      "scope": "entity.name.class.js, meta.instance.constructor",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "entity.name.extends.js",
+      "scope": "entity.name.extends.js",
+      "foreground": "var(blue8)",
+      "font_style": "italic"
+    },
+    {
+      "name": "entity.other.attribute-name.id",
+      "scope": "entity.other.attribute-name.id",
+      "foreground": "var(purple3)"
+    },
+    {
+      "name": "class name",
+      "scope": "meta.prototype support.class",
+      "foreground": "var(purple3)"
+    },
+    {
+      "name": "Library constant",
+      "scope": "support.constant",
+      "foreground": "var(pink3)"
+    },
+    {
+      "name": "Library class/type",
+      "scope":
+        "support.type, support.class, variable.language, support.variable, support.function.external, variable.other.dollar.only, variable.other.object.dollar.only",
+      "foreground": "var(red3)"
+    },
+    {
+      "name": "js undefined",
+      "scope": "constant.language.undefined.js",
+      "foreground": "var(green2)"
+    },
+    {
+      "name": "false",
+      "scope": "constant.language.boolean.false",
+      "foreground": "var(green2)"
+    },
+    {
+      "name": "true",
+      "scope": "constant.language.boolean.true",
+      "foreground": "var(green2)"
+    },
+    {
+      "name": "js null",
+      "scope": "constant.language.null.js",
+      "foreground": "var(green2)"
+    },
+    {
+      "name": "js user-defined constant",
+      "scope":
+        "variable.other.constant, variable.other.object.constant, constant.other.user-defined.js, variable.other.readwrite.allCap, variable.other.readwrite.import.allCap, variable.other.readwrite.export.allCap, variable.other.readwrite.property.allCap, variable.other.readwrite.property.object-literal.allCap, entity.name.constant",
+      "foreground": "var(green2)",
+      "background": "color(var(white12) alpha(0.6))"
+    },
+    {
+      "name": "js decorator",
+      "scope": "variable.other.readwrite.decorator, variable.annotation",
+      "foreground": "var(green2)"
+    },
+    {
+      "name": "Inherited class",
+      "scope": "entity.other.inherited-class",
+      "foreground": "var(purple3)",
+      "font_style": "italic underline"
+    },
+    {
+      "name": "meta.diff.range",
+      "scope": "meta.diff.range",
+      "foreground": "color(var(black2) alpha(0.5))",
+      "background": "var(white13)"
+    },
+    {
+      "name": "meta.diff.header",
+      "scope": "meta.diff.header",
+      "foreground": "var(blue7)",
+      "background": "var(white14)"
+    },
+    {
+      "name": "diff.deleted",
+      "scope": "markup.deleted",
+      "foreground": "var(pink3)",
+      "background": "var(white)"
+    },
+    {
+      "name": "diff.changed",
+      "scope": "markup.changed",
+      "foreground": "var(orange3)",
+      "background": "var(white9)"
+    },
+    {
+      "name": "diff.inserted",
+      "scope": "markup.inserted",
+      "foreground": "var(green)",
+      "background": "var(white10)"
+    },
+    {
+      "name": "Log Entry",
+      "scope": "meta.line.entry.logfile, meta.line.exit.logfile",
+      "foreground": "var(white3)",
+      "background": "color(var(white4) alpha(0.16))"
+    },
+    {
+      "name": "Log Entry Error",
+      "scope": "meta.line.error.logfile",
+      "foreground": "var(white3)",
+      "background": "var(red)"
+    },
+    {
+      "name": "JSON String",
+      "scope": "meta.structure.dictionary.json string.quoted.double",
+      "foreground": "var(blue6)"
+    },
+    {
+      "name": "String constant",
+      "scope":
+        "string.quoted.constant, string.interpolated, string.constant, string.quoted, string.attribute.jsx, string.template",
+      "foreground": "color(var(blue6) alpha(0.93))",
+      "background": "color(var(blue3) alpha(0.2))"
+    },
+    {
+      "name": "JSON Key",
+      "scope":
+        "string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell, variable.other.readwrite.property.object-literal, variable.other.readwrite.property.shorthand, meta.object-literal.key, object.property",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "Punctuation separator",
+      "scope": "punctuation.separator, keyword.operator.other.association",
+      "foreground": "var(grey4)"
+    },
+    {
+      "name": "variable.other.readwrite.moduleScoped.es",
+      "scope": "variable.other.readwrite.moduleScoped.es",
+      "foreground": "var(black)",
+      "font_style": "italic"
+    },
+    {
+      "name": "keyword.control.flow",
+      "scope":
+        "keyword.control.flow.return, keyword.control.flow.throw, storage.type.function.arrow",
+      "background": "var(white)"
+    },
+    {
+      "name": "meta.tag entity",
+      "scope": "entity.name.subtag",
+      "foreground": "var(red2)"
+    },
+    {
+      "name": "Bracket Highlighter",
+      "scope": "brackethighlighter.default",
+      "foreground": "var(red2)"
+    },
+    {
+      "name": "Bracket dim",
+      "scope": "meta.brace, punctuation.definition.parameters",
+      "foreground": "var(grey4)"
+    },
+    {
+      "name": "source.php source.sql, source.php source.sql string.quoted",
+      "scope": "source.php source.sql, source.php source.sql string.quoted",
+      "background": "var(white)"
+    },
+    {
+      "name": "string meta.embedded",
+      "scope": "string meta.embedded",
+      "foreground": "var(grey3)",
+      "background": "var(white2)"
+    },
+    {
+      "name": "meta.flowtype",
+      "scope": "meta.flowtype",
+      "foreground": "var(orange)",
+      "background": "var(white8)"
+    },
+    {
+      "name": "punctuation.flowtype",
+      "scope": "punctuation.flowtype",
+      "foreground": "var(orange3)"
+    },
+    {
+      "name": "constant.other.primitive.flowtype",
+      "scope": "constant.other.primitive.flowtype",
+      "foreground": "var(pink)"
+    },
+    {
+      "name": "region.redish",
+      "scope": "region.redish",
+      "foreground": "var(red5)",
+      "background": "var(white6)"
+    },
+    {
+      "name": "region.yellowish",
+      "scope": "region.yellowish",
+      "foreground": "var(orange3)",
+      "background": "var(white9)"
+    },
+    {
+      "name": "region.greenish",
+      "scope": "region.greenish",
+      "foreground": "var(green2)",
+      "background": "color(var(white12) alpha(0.6))"
+    },
+    {
+      "name": "region.bluish",
+      "scope": "region.bluish",
+      "foreground": "color(var(blue6) alpha(0.93))",
+      "background": "color(var(blue3) alpha(0.2))"
+    },
+    {
+      "name": "region.purplish",
+      "scope": "region.purplish",
+      "foreground": "var(purple4)",
+      "background": "var(white11)"
+    }
+  ]
+}
