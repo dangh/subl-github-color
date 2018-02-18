@@ -327,15 +327,10 @@
       "background": "var(red)"
     },
     {
-      "name": "JSON String",
-      "scope": "meta.structure.dictionary.json string.quoted.double",
-      "foreground": "var(blue6)"
-    },
-    {
       "name": "String constant",
       "scope":
-        "string.quoted.constant, string.interpolated, string.constant, string.quoted, string.attribute.jsx, string.template",
-      "foreground": "color(var(blue6) alpha(0.93))",
+        "string.quoted, string.interpolated, string.constant, string.attribute.jsx, string.template",
+      "foreground": "var(blue6)",
       "background": "color(var(blue3) alpha(0.2))"
     },
     {
