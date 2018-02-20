@@ -82,6 +82,13 @@
       "foreground": "var(string_fg)"
     },
     {
+      "name": "String highlight",
+      "scope":
+        "string.quoted - meta.embedded, string.interpolated, string.attribute.jsx, string.template, meta.embedded string.quoted",
+      "foreground": "var(string_fg)",
+      "background": "var(string_bg)"
+    },
+    {
       "scope": "invalid",
       "foreground": "var(invalid_fg)",
       "background": "var(invalid_bg)"
@@ -211,13 +218,6 @@
       "scope": "markup.inserted",
       "foreground": "var(markup_inserted_fg)",
       "background": "var(markup_inserted_bg)"
-    },
-    {
-      "name": "String constant",
-      "scope":
-        "string.quoted - meta.embedded, string.interpolated, string.attribute.jsx, string.template, meta.embedded string.quoted",
-      "foreground": "var(string_fg)",
-      "background": "var(string_bg)"
     },
     {
       "name": "JSON Key",
