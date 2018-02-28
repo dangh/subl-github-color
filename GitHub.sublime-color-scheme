@@ -84,7 +84,7 @@
     {
       "name": "String highlight",
       "scope":
-        "string.quoted - meta.embedded, string.interpolated, string.attribute.jsx, string.template, meta.embedded string.quoted",
+        "string.quoted - meta.embedded, string.interpolated - entity.quasi.tag.name, string.attribute.jsx, string.template, meta.embedded string.quoted",
       "foreground": "var(string_fg)",
       "background": "var(string_bg)"
     },
