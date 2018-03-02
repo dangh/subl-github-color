@@ -244,6 +244,12 @@
       "background": "var(keyword_bg)"
     },
     {
+      "name": "keyword.control.flow",
+      "scope": "storage.type.module.export keyword.operator.module, storage.modifier.module.default",
+      "background": "var(text_fg)",
+      "foreground": "var(text_bg)"
+    },
+    {
       "name": "source.php source.sql, source.php source.sql string.quoted",
       "scope": "source.php source.sql, source.php source.sql string.quoted",
       "background": "var(keyword_bg)"
