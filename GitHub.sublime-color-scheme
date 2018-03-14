@@ -241,7 +241,7 @@
     {
       "name": "keyword.control.flow",
       "scope":
-        "keyword.control.flow.return, keyword.control.flow.throw, storage.type.function.arrow",
+        "keyword.control.flow.return, keyword.control.flow.throw, storage.type.function.arrow, keyword.control.flow.ts",
       "background": "var(keyword_bg)"
     },
     {
