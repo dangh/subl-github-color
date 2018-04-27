@@ -52,6 +52,8 @@
     "line_highlight": "var(line_highlight_bg)",
     "selection": "var(selection_bg)",
     "selection_border": "var(selection_bg)",
+    "selection_border_width": "0",
+    "selection_corner_radius": "5",
     "gutter_foreground": "var(linenumber_fg)",
     "shadow": "color(var(black) alpha(0.27))",
     "guide": "color(var(black) alpha(0.063))",
