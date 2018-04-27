@@ -78,7 +78,7 @@
       "foreground": "var(semicolon_fg)"
     },
     {
-      "scope": "string - meta.embedded",
+      "scope": "string - meta.embedded - string.text",
       "foreground": "var(string_fg)"
     },
     {
