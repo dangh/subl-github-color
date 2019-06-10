@@ -240,7 +240,7 @@
     },
     {
       "name": "keyword.control.flow",
-      "scope": "keyword.control.flow.return, keyword.control.flow.throw, storage.type.function.arrow, storage.type.function.async.arrow, keyword.control.flow.ts",
+      "scope": "keyword.control.flow.return, keyword.control.flow.throw, storage.type.function.arrow, storage.type.function.async.arrow, keyword.control.flow.ts, keyword.control.flow.break, keyword.control.flow.continue",
       "background": "var(keyword_bg)"
     },
     {
