@@ -2,117 +2,117 @@
   "name": "GitHub",
   "author": "DangH",
   "variables": {
-    "black": "hsl(0, 0%, 0%)",
-    "bluish_bg_vscode": "hsl(257, 37%, 96%)",
-    "bluish_fg_vscode": "hsl(204, 100%, 37%)",
-    "bracket_match_fg": "hsl(2, 96%, 67%)",
-    "caret": "hsl(194, 97%, 55%)",
-    "class_fg": "hsl(14, 83%, 60%)",
-    "comment_fg": "hsl(120, 1%, 59%)",
-    "constant_bg": "hsla(111, 26%, 95%, 0.6)",
-    "constant_fg": "hsl(142, 100%, 33%)",
-    "diff_header_bg": "hsl(210, 100%, 93%)",
-    "diff_header_fg": "hsl(210, 12%, 30%)",
-    "diff_range_bg": "hsla(210, 13%, 12%, 0.5)",
-    "diff_range_fg": "hsl(210, 100%, 97%)",
-    "find_highlight_bg": "hsl(47, 100%, 79%)",
-    "flowtype_bg": "hsl(51, 54%, 97%)",
-    "flowtype_fg": "hsl(38, 95%, 37%)",
-    "flowtype_number_fg": "hsl(30, 88%, 43%)",
-    "flowtype_primitive_fg": "hsl(315, 71%, 38%)",
-    "flowtype_punctuation_fg": "hsl(46, 78%, 31%)",
-    "function_name_fg": "hsl(264, 28%, 50%)",
-    "invalid_bg": "hsl(305, 98%, 68%)",
-    "invalid_fg": "hsl(300, 31%, 26%)",
-    "keyword_bg": "hsl(0, 100%, 96%)",
-    "keyword_fg": "hsl(332, 70%, 38%)",
-    "line_highlight_bg": "hsl(49, 77%, 88%)",
-    "linenumber_fg": "hsl(0, 0%, 72%)",
-    "markup_inserted_bg": "hsl(120, 100%, 96%)",
-    "markup_inserted_fg": "hsl(125, 61%, 26%)",
-    "parameter_fg": "hsl(32, 98%, 56%)",
-    "property_fg": "hsl(195, 100%, 35%)",
-    "punctuation_separator_fg": "hsl(0, 0%, 33%)",
-    "purplish_bg_vscode": "hsla(253, 100%, 81%, 0.2)",
-    "purplish_fg_vscode": "hsl(244, 41%, 33%)",
-    "reddish_bg_vscode": "hsl(343, 37%, 96%)",
-    "reddish_fg_vscode": "hsl(345, 69%, 46%)",
-    "selection_bg": "hsl(210, 95%, 85%)",
-    "semicolon_fg": "hsl(0, 0%, 87%)",
-    "string_bg": "hsla(210, 95%, 85%, 0.2)",
-    "string_fg": "hsl(225, 72%, 33%)",
-    "text_bg": "hsl(0, 0%, 100%)",
-    "text_fg": "hsl(0, 0%, 20%)"
+    "--black": "hsl(0, 0%, 0%)",
+    "--bluish-bg-vscode": "hsl(257, 37%, 96%)",
+    "--bluish-fg-vscode": "hsl(204, 100%, 37%)",
+    "--bracket-match-fg": "hsl(2, 96%, 67%)",
+    "--caret": "hsl(194, 97%, 55%)",
+    "--class-fg": "hsl(14, 83%, 60%)",
+    "--comment-fg": "hsl(120, 1%, 59%)",
+    "--constant-bg": "hsla(111, 26%, 95%, 0.6)",
+    "--constant-fg": "hsl(142, 100%, 33%)",
+    "--diff-header-bg": "hsl(210, 100%, 93%)",
+    "--diff-header-fg": "hsl(210, 12%, 30%)",
+    "--diff-range-bg": "hsla(210, 13%, 12%, 0.5)",
+    "--diff-range-fg": "hsl(210, 100%, 97%)",
+    "--find-highlight-bg": "hsl(47, 100%, 79%)",
+    "--flowtype-bg": "hsl(51, 54%, 97%)",
+    "--flowtype-fg": "hsl(38, 95%, 37%)",
+    "--flowtype-number-fg": "hsl(30, 88%, 43%)",
+    "--flowtype-primitive-fg": "hsl(315, 71%, 38%)",
+    "--flowtype-punctuation-fg": "hsl(46, 78%, 31%)",
+    "--function-name-fg": "hsl(264, 28%, 50%)",
+    "--invalid-bg": "hsl(305, 98%, 68%)",
+    "--invalid-fg": "hsl(300, 31%, 26%)",
+    "--keyword-bg": "hsl(0, 100%, 96%)",
+    "--keyword-fg": "hsl(332, 70%, 38%)",
+    "--line-highlight-bg": "hsl(49, 77%, 88%)",
+    "--linenumber-fg": "hsl(0, 0%, 72%)",
+    "--markup-inserted-bg": "hsl(120, 100%, 96%)",
+    "--markup-inserted-fg": "hsl(125, 61%, 26%)",
+    "--parameter-fg": "hsl(32, 98%, 56%)",
+    "--property-fg": "hsl(195, 100%, 35%)",
+    "--punctuation-separator-fg": "hsl(0, 0%, 33%)",
+    "--purplish-bg-vscode": "hsla(253, 100%, 81%, 0.2)",
+    "--purplish-fg-vscode": "hsl(244, 41%, 33%)",
+    "--reddish-bg-vscode": "hsl(343, 37%, 96%)",
+    "--reddish-fg-vscode": "hsl(345, 69%, 46%)",
+    "--selection-bg": "hsl(210, 95%, 85%)",
+    "--semicolon-fg": "hsl(0, 0%, 87%)",
+    "--string-bg": "hsla(210, 95%, 85%, 0.2)",
+    "--string-fg": "hsl(225, 72%, 33%)",
+    "--text-bg": "hsl(0, 0%, 100%)",
+    "--text-fg": "hsl(0, 0%, 20%)"
   },
   "globals": {
-    "foreground": "var(text_fg)",
-    "background": "var(text_bg)",
-    "caret": "var(caret)",
-    "invisibles": "color(var(black) alpha(0.063))",
-    "line_highlight": "var(line_highlight_bg)",
-    "selection": "var(selection_bg)",
-    "selection_border": "var(selection_bg)",
+    "foreground": "var(--text-fg)",
+    "background": "var(--text-bg)",
+    "caret": "var(--caret)",
+    "invisibles": "hsla(0, 0%, 0%, 0.063)",
+    "line_highlight": "var(--line-highlight-bg)",
+    "selection": "var(--selection-bg)",
+    "selection_border": "var(--selection-bg)",
     "selection_border_width": "0",
     "selection_corner_radius": "5",
-    "gutter_foreground": "var(linenumber_fg)",
-    "shadow": "color(var(black) alpha(0.27))",
-    "guide": "color(var(black) alpha(0.063))",
-    "active_guide": "var(black)",
-    "stack_guide": "color(var(black) alpha(0.063))",
-    "find_highlight_foreground": "var(black)",
-    "find_highlight": "var(find_highlight_bg)",
+    "gutter_foreground": "var(--linenumber-fg)",
+    "shadow": "hsla(0, 0%, 0%, 0.27)",
+    "guide": "hsla(0, 0%, 0%, 0.063)",
+    "active_guide": "var(--black)",
+    "stack_guide": "hsla(0, 0%, 0%, 0.063)",
+    "find_highlight_foreground": "var(--black)",
+    "find_highlight": "var(--find-highlight-bg)",
     "brackets_options": "underline foreground",
-    "brackets_foreground": "var(bracket_match_fg)",
+    "brackets_foreground": "var(--bracket-match-fg)",
     "bracket_contents_options": "underline foreground",
-    "bracket_contents_foreground": "var(bracket_match_fg)",
+    "bracket_contents_foreground": "var(--bracket-match-fg)",
     "tags_options": "underline foreground",
-    "tags_foreground": "var(bracket_match_fg)"
+    "tags_foreground": "var(--bracket-match-fg)"
   },
   "rules": [
     {
       "name": "comment",
       "scope": "comment, punctuation.definition.eslint",
-      "foreground": "var(comment_fg)"
+      "foreground": "var(--comment-fg)"
     },
     {
       "name": "invisible semicolon",
       "scope": "punctuation.terminator.statement",
-      "foreground": "var(semicolon_fg)"
+      "foreground": "var(--semicolon-fg)"
     },
     {
       "scope": "string - meta.embedded - string.text",
-      "foreground": "var(string_fg)"
+      "foreground": "var(--string-fg)"
     },
     {
       "name": "String highlight",
       "scope":
         "string.quoted - meta.embedded, string.interpolated - entity.quasi.tag.name, string.attribute.jsx, string.template, meta.embedded string.quoted",
-      "foreground": "var(string_fg)",
-      "background": "var(string_bg)"
+      "foreground": "var(--string-fg)",
+      "background": "var(--string-bg)"
     },
     {
       "scope": "invalid",
-      "foreground": "var(invalid_fg)",
-      "background": "var(invalid_bg)"
+      "foreground": "var(--invalid-fg)",
+      "background": "var(--invalid-bg)"
     },
     {
       "scope": "constant",
-      "foreground": "var(constant_fg)"
+      "foreground": "var(--constant-fg)"
     },
     {
       "name": "keyword",
       "scope": "keyword, storage, support.function, punctuation.accessor",
-      "foreground": "var(keyword_fg)"
+      "foreground": "var(--keyword-fg)"
     },
     {
       "name": "Function argument",
       "scope": "meta.function.argument, variable.parameter, meta.parens.c",
-      "foreground": "var(parameter_fg)"
+      "foreground": "var(--parameter-fg)"
     },
     {
       "name": "entity.name.tag",
       "scope": "entity.name.tag, entity.name.tag support.class, entity.name.class",
-      "foreground": "var(constant_fg)"
+      "foreground": "var(--constant-fg)"
     },
     {
       "name": "entity.name.tag.close",
@@ -125,172 +125,172 @@
     {
       "name": "Attribute",
       "scope": "entity.other.attribute-name, variable.other.attribute",
-      "foreground": "var(function_name_fg)",
+      "foreground": "var(--function-name-fg)",
       "font_style": "italic"
     },
     {
       "name": "entity.name.module.js, variable.import.parameter.js, variable.other.class.js",
       "scope": "entity.name.module.js, variable.import.parameter.js, variable.other.class.js",
-      "foreground": "var(function_name_fg)"
+      "foreground": "var(--function-name-fg)"
     },
     {
       "scope": "entity.name.accessor.js",
-      "foreground": "var(function_name_fg)"
+      "foreground": "var(--function-name-fg)"
     },
     {
       "scope": "entity.name.method.js",
-      "foreground": "var(function_name_fg)"
+      "foreground": "var(--function-name-fg)"
     },
     {
       "scope": "meta.method.js",
-      "foreground": "var(text_fg)"
+      "foreground": "var(--text-fg)"
     },
     {
       "scope": "support.function",
-      "foreground": "var(keyword_fg)"
+      "foreground": "var(--keyword-fg)"
     },
     {
       "name": "Function name",
       "scope": "entity.name.function, entity.name.method",
-      "foreground": "var(function_name_fg)"
+      "foreground": "var(--function-name-fg)"
     },
     {
       "name": "entity.name.class.js",
       "scope": "entity.name.class.js, meta.instance.constructor",
-      "foreground": "var(class_fg)"
+      "foreground": "var(--class-fg)"
     },
     {
       "scope": "entity.other.attribute-name.id",
-      "foreground": "var(function_name_fg)"
+      "foreground": "var(--function-name-fg)"
     },
     {
       "name": "class name",
       "scope": "meta.prototype support.class",
-      "foreground": "var(function_name_fg)"
+      "foreground": "var(--function-name-fg)"
     },
     {
       "name": "Library constant",
       "scope": "support.constant",
-      "foreground": "var(keyword_fg)"
+      "foreground": "var(--keyword-fg)"
     },
     {
       "name": "Library class/type",
       "scope":
         "support.type, support.class, variable.language, support.variable, support.function.external, variable.other.dollar.only, variable.other.object.dollar.only",
-      "foreground": "var(class_fg)"
+      "foreground": "var(--class-fg)"
     },
     {
       "name": "js user-defined constant",
       "scope":
         "variable.other.constant, variable.other.object.constant, constant.other.user-defined.js, variable.other.readwrite.allCap, variable.other.readwrite.import.allCap, variable.other.readwrite.export.allCap, variable.other.readwrite.property.allCap, variable.other.readwrite.property.object-literal.allCap, entity.name.constant",
-      "foreground": "var(constant_fg)",
-      "background": "var(constant_bg)"
+      "foreground": "var(--constant-fg)",
+      "background": "var(--constant-bg)"
     },
     {
       "name": "js decorator",
       "scope": "variable.other.readwrite.decorator, variable.annotation",
-      "foreground": "var(constant_fg)"
+      "foreground": "var(--constant-fg)"
     },
     {
       "scope": "entity.other.inherited-class",
-      "foreground": "var(function_name_fg)",
+      "foreground": "var(--function-name-fg)",
       "font_style": "italic underline"
     },
     {
       "scope": "meta.diff.range",
-      "foreground": "var(diff_range_bg)",
-      "background": "var(diff_range_fg)"
+      "foreground": "var(--diff-range-bg)",
+      "background": "var(--diff-range-fg)"
     },
     {
       "scope": "meta.diff.header",
-      "foreground": "var(diff_header_fg)",
-      "background": "var(diff_header_bg)"
+      "foreground": "var(--diff-header-fg)",
+      "background": "var(--diff-header-bg)"
     },
     {
       "scope": "markup.deleted",
-      "foreground": "var(keyword_fg)",
-      "background": "var(keyword_bg)"
+      "foreground": "var(--keyword-fg)",
+      "background": "var(--keyword-bg)"
     },
     {
       "scope": "markup.changed",
-      "foreground": "var(flowtype_punctuation_fg)",
-      "background": "var(flowtype_bg)"
+      "foreground": "var(--flowtype-punctuation-fg)",
+      "background": "var(--flowtype-bg)"
     },
     {
       "scope": "markup.inserted",
-      "foreground": "var(markup_inserted_fg)",
-      "background": "var(markup_inserted_bg)"
+      "foreground": "var(--markup-inserted-fg)",
+      "background": "var(--markup-inserted-bg)"
     },
     {
       "name": "JSON Key",
       "scope":
         "string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell, variable.other.readwrite.property.object-literal, variable.other.readwrite.property.shorthand, meta.object-literal.key, object.property",
-      "foreground": "var(property_fg)"
+      "foreground": "var(--property-fg)"
     },
     {
       "name": "Punctuation separator",
       "scope": "punctuation.separator, keyword.operator.other.association",
-      "foreground": "var(punctuation_separator_fg)"
+      "foreground": "var(--punctuation-separator-fg)"
     },
     {
       "name": "variable.other.readwrite.moduleScoped.es",
       "scope": "variable.other.readwrite.moduleScoped.es",
-      "foreground": "var(black)",
+      "foreground": "var(--black)",
       "font_style": "italic"
     },
     {
       "name": "keyword.control.flow",
       "scope": "keyword.control.flow.return, keyword.control.flow.throw, storage.type.function.arrow, storage.type.function.async.arrow, keyword.control.flow.ts, keyword.control.flow.break, keyword.control.flow.continue",
-      "background": "var(keyword_bg)"
+      "background": "var(--keyword-bg)"
     },
     {
       "name": "keyword.control.flow",
       "scope": "storage.type.module.export keyword.operator.module, storage.modifier.module.default",
-      "background": "var(text_fg)",
-      "foreground": "var(text_bg)"
+      "background": "var(--text-fg)",
+      "foreground": "var(--text-bg)"
     },
     {
       "name": "source.php source.sql, source.php source.sql string.quoted",
       "scope": "source.php source.sql, source.php source.sql string.quoted",
-      "background": "var(keyword_bg)"
+      "background": "var(--keyword-bg)"
     },
     {
       "scope": "meta.flowtype",
-      "foreground": "var(flowtype_fg)",
-      "background": "var(flowtype_bg)"
+      "foreground": "var(--flowtype-fg)",
+      "background": "var(--flowtype-bg)"
     },
     {
       "scope": "punctuation.flowtype",
-      "foreground": "var(flowtype_punctuation_fg)"
+      "foreground": "var(--flowtype-punctuation-fg)"
     },
     {
       "scope": "constant.other.primitive.flowtype",
-      "foreground": "var(flowtype_primitive_fg)"
+      "foreground": "var(--flowtype-primitive-fg)"
     },
     {
       "scope": "region.redish",
-      "foreground": "var(reddish_fg_vscode)",
-      "background": "var(reddish_bg_vscode)"
+      "foreground": "var(--reddish-fg-vscode)",
+      "background": "var(--reddish-bg-vscode)"
     },
     {
       "scope": "region.yellowish",
-      "foreground": "var(flowtype_number_fg)",
-      "background": "var(flowtype_bg)"
+      "foreground": "var(--flowtype-number-fg)",
+      "background": "var(--flowtype-bg)"
     },
     {
       "scope": "region.greenish",
-      "foreground": "var(constant_fg)",
-      "background": "var(constant_bg)"
+      "foreground": "var(--constant-fg)",
+      "background": "var(--constant-bg)"
     },
     {
       "scope": "region.bluish",
-      "foreground": "var(bluish_fg_vscode)",
-      "background": "var(bluish_bg_vscode)"
+      "foreground": "var(--bluish-fg-vscode)",
+      "background": "var(--bluish-bg-vscode)"
     },
     {
       "scope": "region.purplish",
-      "foreground": "var(purplish_fg_vscode)",
-      "background": "var(purplish_bg_vscode)"
+      "foreground": "var(--purplish-fg-vscode)",
+      "background": "var(--purplish-bg-vscode)"
     }
   ]
 }
