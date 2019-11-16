@@ -84,11 +84,16 @@
       "foreground": "var(--string-fg)"
     },
     {
-      "name": "String highlight",
+      "name": "string highlight",
       "scope":
         "string.quoted - meta.embedded, string.interpolated - entity.quasi.tag.name, string.attribute.jsx, string.template, meta.embedded string.quoted",
       "foreground": "var(--string-fg)",
       "background": "var(--string-bg)"
+    },
+    {
+      "name": "string punctuation",
+      "scope": "source.js punctuation.definition.string",
+      "foreground": "color(var(--string_fg) blend(var(--string_bg) 30%))"
     },
     {
       "scope": "invalid",
@@ -105,7 +110,7 @@
       "foreground": "var(--keyword-fg)"
     },
     {
-      "name": "Function argument",
+      "name": "function argument",
       "scope": "meta.function.argument, variable.parameter, meta.parens.c",
       "foreground": "var(--parameter-fg)"
     },
@@ -123,7 +128,7 @@
       "scope": "entity.name.tag.html"
     },
     {
-      "name": "Attribute",
+      "name": "attribute",
       "scope": "entity.other.attribute-name, variable.other.attribute",
       "foreground": "var(--function-name-fg)",
       "font_style": "italic"
@@ -150,7 +155,7 @@
       "foreground": "var(--keyword-fg)"
     },
     {
-      "name": "Function name",
+      "name": "function name",
       "scope": "entity.name.function, entity.name.method",
       "foreground": "var(--function-name-fg)"
     },
@@ -169,12 +174,12 @@
       "foreground": "var(--function-name-fg)"
     },
     {
-      "name": "Library constant",
+      "name": "library constant",
       "scope": "support.constant",
       "foreground": "var(--keyword-fg)"
     },
     {
-      "name": "Library class/type",
+      "name": "library class/type",
       "scope":
         "support.type, support.class, variable.language, support.variable, support.function.external, variable.other.dollar.only, variable.other.object.dollar.only",
       "foreground": "var(--class-fg)"
@@ -222,13 +227,13 @@
       "background": "var(--markup-inserted-bg)"
     },
     {
-      "name": "JSON Key",
+      "name": "JSON key",
       "scope":
         "string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell, variable.other.readwrite.property.object-literal, variable.other.readwrite.property.shorthand, meta.object-literal.key, object.property",
       "foreground": "var(--property-fg)"
     },
     {
-      "name": "Punctuation separator",
+      "name": "punctuation separator",
       "scope": "punctuation.separator, keyword.operator.other.association",
       "foreground": "var(--punctuation-separator-fg)"
     },
