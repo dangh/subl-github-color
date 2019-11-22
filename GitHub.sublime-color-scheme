@@ -93,7 +93,7 @@
     {
       "name": "string punctuation",
       "scope": "source.js punctuation.definition.string",
-      "foreground": "color(var(--string_fg) blend(var(--string_bg) 30%))"
+      "foreground": "color(var(--string-fg) blend(var(--string-bg) 30%))"
     },
     {
       "scope": "invalid",
