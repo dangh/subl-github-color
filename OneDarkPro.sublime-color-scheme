@@ -95,6 +95,9 @@
     //OneDarkPro overrides
     "selection_corner_radius": "0",
     "invisibles": "hsla(220, 14%, 71%, 0.15)",
+    "stack_guide": "color(var(--black) a(0.05))",
+    "active_guide": "color(var(--black) a(0.15))",
+    "stack_guide": "color(var(--black) a(0.05))",
     "brackets_options": "underline",
     "bracket_contents_options": "underline", 
   },
