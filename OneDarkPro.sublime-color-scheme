@@ -349,7 +349,7 @@
       "foreground": "var(--variable-fg)",
     },
     {
-      "scope": "keyword.operator - keyword.operator.accessor - keyword.operator.new - keyword.operator.relational",
+      "scope": "keyword.operator - keyword.operator.accessor - keyword.operator.new - keyword.operator.relational - keyword.operator.unary",
       "foreground": "var(--operator-fg)",
     },
     {
@@ -363,6 +363,11 @@
     {
       "scope": "storage.type.accessor",
       "foreground": "var(--storage-fg)",
+    },
+    {
+      "name": "entity.name.class.js",
+      "scope": "entity.name.class.js, meta.instance.constructor, meta.super-expression.es variable.other.readwrite.initCap.es, variable.other.readwrite.initCap",
+      "foreground": "var(--class-fg)"
     },
   ]
 }
