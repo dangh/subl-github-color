@@ -93,6 +93,7 @@
     "tags_options": "underline foreground",
     "tags_foreground": "var(--bracket-match-fg)",
     //OneDarkPro overrides
+    "block_caret": "color(var(--caret) a(0.5))",
     "selection_corner_radius": "0",
     "invisibles": "hsla(220, 14%, 71%, 0.15)",
     "stack_guide": "color(var(--black) a(0.05))",
