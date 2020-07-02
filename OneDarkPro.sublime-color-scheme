@@ -68,6 +68,9 @@
     "--semicolon-fg": "var(--text-fg)",
     "--storage-fg": "color(hsl(187, 47%, 55%) blend(#777 90%))",
     "--bracket-match-fg": "color(hsl(220, 100%, 66%) blend(#777 90%))",
+    "--line_diff_added": "color(hsl(150, 60%, 54%) a(0.6))",
+    "--line_diff_modified": "color(hsl(40, 59%, 70%) a(0.6))",
+    "--line_diff_deleted": "color(hsl(360, 70%, 60%) a(0.6))",
   },
   "globals": {
     "foreground": "var(--text-fg)",
@@ -100,7 +103,11 @@
     "active_guide": "color(var(--black) a(0.15))",
     "stack_guide": "color(var(--black) a(0.05))",
     "brackets_options": "underline",
-    "bracket_contents_options": "underline", 
+    "bracket_contents_options": "underline",
+    "line_diff_width": "2",
+    "line_diff_added": "var(--line_diff_added)",
+    "line_diff_modified": "var(--line_diff_modified)",
+    "line_diff_deleted": "var(--line_diff_deleted)",
   },
   "rules": [
     {
@@ -335,6 +342,7 @@
     {
       "scope": "comment",
       "font_style": "italic",
+      "selection_foreground": "color(var(--comment-fg) l(+ 15%))",
     },
     {
       "scope": "string punctuation.definition.string",
