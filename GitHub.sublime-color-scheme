@@ -42,7 +42,10 @@
     "--string-bg": "hsla(210, 95%, 85%, 0.2)",
     "--string-fg": "hsl(225, 72%, 33%)",
     "--text-bg": "hsl(0, 0%, 100%)",
-    "--text-fg": "hsl(0, 0%, 20%)"
+    "--text-fg": "hsl(0, 0%, 20%)",
+    "--line_diff_added": "color(hsl(132, 60%, 44%) a(0.6))",
+    "--line_diff_modified": "color(hsl(40, 90%, 50%) a(0.6))",
+    "--line_diff_deleted": "color(hsl(360, 100%, 54%) a(0.6))",
   },
   "globals": {
     "foreground": "var(--text-fg)",
@@ -66,7 +69,11 @@
     "bracket_contents_options": "underline foreground",
     "bracket_contents_foreground": "var(--bracket-match-fg)",
     "tags_options": "underline foreground",
-    "tags_foreground": "var(--bracket-match-fg)"
+    "tags_foreground": "var(--bracket-match-fg)",
+    "line_diff_width": "2",
+    "line_diff_added": "var(--line_diff_added)",
+    "line_diff_modified": "var(--line_diff_modified)",
+    "line_diff_deleted": "var(--line_diff_deleted)",
   },
   "rules": [
     {
