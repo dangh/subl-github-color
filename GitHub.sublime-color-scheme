@@ -2,7 +2,7 @@
   "name": "GitHub",
   "author": "DangH",
   "variables": {
-    "--black": "hsl(0, 0%, 0%)",
+    "--black": "hsl(1, 0%, 0%)",
     "--bluish-bg-vscode": "hsl(257, 37%, 96%)",
     "--bluish-fg-vscode": "hsl(204, 100%, 37%)",
     "--bracket-match-fg": "hsl(2, 96%, 67%)",
@@ -46,6 +46,19 @@
     "--line_diff_added": "color(hsl(132, 60%, 44%) a(0.6))",
     "--line_diff_modified": "color(hsl(40, 90%, 50%) a(0.6))",
     "--line_diff_deleted": "color(hsl(360, 100%, 54%) a(0.6))",
+    "--json-key-bg": "",
+    "--json-key-fg": "var(--keyword-fg)",
+    "--json-key-quotes-fg": "color(var(--json-key-fg) alpha(30%))",
+    "--json-key-l1-fg": "var(--bluish-fg-vscode)",
+    "--json-key-quotes-l1-fg": "color(var(--json-key-l1-fg) alpha(30%))",
+    "--json-key-l2-fg": "var(--keyword-fg)",
+    "--json-key-quotes-l2-fg": "color(var(--json-key-l2-fg) alpha(30%))",
+    "--json-key-l3-fg": "var(--bluish-fg-vscode)",
+    "--json-key-quotes-l3-fg": "color(var(--json-key-l3-fg) alpha(30%))",
+    "--json-key-l4-fg": "var(--keyword-fg)",
+    "--json-key-quotes-l4-fg": "color(var(--json-key-l4-fg) alpha(30%))",
+    "--json-key-l5-fg": "var(--bluish-fg-vscode)",
+    "--json-key-quotes-l5-fg": "color(var(--json-key-l5-fg) alpha(30%))",
   },
   "globals": {
     "foreground": "var(--text-fg)",
@@ -238,6 +251,67 @@
       "scope":
         "string.unquoted.label, table.key.lua, variable.other.bracket.shell, variable.other.normal.shell, variable.other.readwrite.property.object-literal, variable.other.readwrite.property.shorthand, meta.object-literal.key, object.property",
       "foreground": "var(--property-fg)"
+    },
+    {
+      "name": "JSON key L0",
+      "scope": "meta.mapping.key.json string.quoted",
+      "foreground": "var(--json-key-fg)",
+      "background": "var(--json-key-bg)",
+    },
+    {
+      "name": "JSON key L0 quotes",
+      "scope": "meta.mapping.key.json string punctuation.definition.string",
+      "foreground": "var(--json-key-quotes-fg)",
+    },
+    {
+      "name": "JSON key L1",
+      "scope": "meta.mapping.value.json meta.mapping.key.json string.quoted",
+      "foreground": "var(--json-key-l1-fg)",
+    },
+    {
+      "name": "JSON key L1 quotes",
+      "scope": "meta.mapping.value.json meta.mapping.key.json string punctuation.definition.string",
+      "foreground": "var(--json-key-quotes-l1-fg)",
+    },
+    {
+      "name": "JSON key L2",
+      "scope": "meta.mapping.value.json meta.mapping.value.json meta.mapping.key.json string.quoted",
+      "foreground": "var(--json-key-l2-fg)",
+    },
+    {
+      "name": "JSON key L2 quotes",
+      "scope": "meta.mapping.value.json meta.mapping.value.json meta.mapping.key.json string punctuation.definition.string",
+      "foreground": "var(--json-key-quotes-l2-fg)",
+    },
+    {
+      "name": "JSON key L3",
+      "scope": "meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.key.json string.quoted",
+      "foreground": "var(--json-key-l3-fg)",
+    },
+    {
+      "name": "JSON key L3 quotes",
+      "scope": "meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.key.json string punctuation.definition.string",
+      "foreground": "var(--json-key-quotes-l3-fg)",
+    },
+    {
+      "name": "JSON key L4",
+      "scope": "meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.key.json string.quoted",
+      "foreground": "var(--json-key-l4-fg)",
+    },
+    {
+      "name": "JSON key L4 quotes",
+      "scope": "meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.key.json string punctuation.definition.string",
+      "foreground": "var(--json-key-quotes-l4-fg)",
+    },
+    {
+      "name": "JSON key L5",
+      "scope": "meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.key.json string.quoted",
+      "foreground": "var(--json-key-l5-fg)",
+    },
+    {
+      "name": "JSON key L5 quotes",
+      "scope": "meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.value.json meta.mapping.key.json string punctuation.definition.string",
+      "foreground": "var(--json-key-quotes-l5-fg)",
     },
     {
       "name": "punctuation separator",
