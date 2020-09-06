@@ -1,0 +1,334 @@
+{
+  "name": "GitHub",
+  "author": "DangH",
+  "variables": {
+    "--black": "hsl(0, 0%, 20%)",
+    "--white": "hsl(0, 0%, 100%)",
+    "--red-bg": "hsl(0, 100%, 96%)",
+    "--red-fg": "hsl(332, 70%, 38%)",
+    "--blue-bg": "hsla(210, 95%, 85%, 0.2)",
+    "--blue-fg": "hsl(225, 72%, 33%)",
+    "--green-bg": "hsla(111, 26%, 95%, 0.6)",
+    "--green-fg": "hsl(142, 100%, 33%)",
+    "--yellow-fg": "hsl(32, 98%, 56%)",
+    "--orange-fg": "hsl(14, 83%, 60%)",
+    "--gray-fg": "hsl(120, 1%, 59%)",
+    "--purple-fg": "hsl(264, 28%, 50%)",
+    "--cyan-fg": "hsl(195, 100%, 35%)",
+    "--selection-bg": "hsl(210, 95%, 85%)",
+    "--find_highlight-fg": "var(--black)",
+    "--find_highlight-bg": "hsl(47, 100%, 79%)",
+    "--bracket_match-fg": "hsl(2, 96%, 67%)",
+    "--line_diff_added": "color(hsl(132, 60%, 44%) a(0.6))",
+    "--line_diff_modified": "color(hsl(40, 90%, 50%) a(0.6))",
+    "--line_diff_deleted": "color(hsl(360, 100%, 54%) a(0.6))",
+    "--invalid-bg": "hsl(305, 98%, 68%)",
+    "--invalid-fg": "hsl(300, 31%, 26%)",
+    "--diff_range-bg": "hsla(210, 13%, 12%, 0.5)",
+    "--diff_range-fg": "hsl(210, 100%, 97%)",
+    "--diff_header-bg": "hsl(210, 100%, 93%)",
+    "--diff_header-fg": "hsl(210, 12%, 30%)",
+    "--diff_deleted-bg": "var(--red-bg)",
+    "--diff_deleted-fg": "var(--red-fg)",
+    "--diff_changed-bg": "hsl(46, 78%, 31%)",
+    "--diff_changed-fg": "hsl(51, 54%, 97%)",
+    "--diff_inserted-bg": "hsl(120, 100%, 96%)",
+    "--diff_inserted-fg": "hsl(125, 61%, 26%)",
+    "--bluish-bg": "hsl(257, 37%, 96%)",
+    "--bluish-fg": "hsl(204, 100%, 37%)",
+    "--purplish-bg": "hsla(253, 100%, 81%, 0.2)",
+    "--purplish-fg": "hsl(244, 41%, 33%)",
+    "--reddish-bg": "hsl(343, 37%, 96%)",
+    "--reddish-fg": "hsl(345, 69%, 46%)",
+    "--greenish-bg": "var(--green-bg)",
+    "--greenish-fg": "var(--green-fg)",
+    "--yellowish-bg": "hsl(51, 54%, 97%)",
+    "--yellowish-fg": "hsl(30, 88%, 43%)",
+    "--string-fg": "var(--blue-fg)",
+    "--string-bg": "var(--blue-bg)",
+    "--constant-bg": "var(--green-bg)",
+    "--constant-fg": "var(--green-fg)",
+    "--parameter-fg": "var(--yellow-fg)",
+    "--support-fg": "var(--orange-fg)",
+    "--storage-fg": "var(--red-fg)",
+    "--keyword-fg": "var(--red-fg)",
+    "--flow-bg": "var(--red-bg)",
+    "--entity-fg": "var(--green-fg)",
+    "--function-fg": "var(--purple-fg)",
+    "--number-fg": "var(--green-fg)",
+    "--label-fg": "var(--cyan-fg)",
+    "--text-fg": "var(--black)",
+    "--text-bg": "var(--white)",
+    "--json-key-bg": "",
+    "--json-key-fg": "var(--red-fg)",
+    "--json-key-quotes-fg": "color(var(--json-key-fg) alpha(30%))",
+    "--json-json-key-fg": "color(var(--red-fg) lightness(+ 10%) saturation(- 20%))",
+    "--json-json-key-quotes-fg": "color(var(--json-json-key-fg) alpha(30%))",
+    "--json-json-json-key-fg": "var(--red-fg)",
+    "--json-json-json-key-quotes-fg": "color(var(--json-json-json-key-fg) alpha(30%))",
+    "--json-json-json-json-key-fg": "color(var(--red-fg) lightness(+ 10%) saturation(- 20%))",
+    "--json-json-json-json-key-quotes-fg": "color(var(--json-json-json-json-key-fg) alpha(30%))",
+    "--json-json-json-json-json-key-fg": "var(--red-fg)",
+    "--json-json-json-json-json-key-quotes-fg": "color(var(--json-json-json-json-json-key-fg) alpha(30%))",
+    "--json-json-json-json-json-json-key-fg": "color(var(--red-fg) lightness(+ 10%) saturation(- 20%))",
+    "--json-json-json-json-json-json-key-quotes-fg": "color(var(--json-json-json-json-json-json-key-fg) alpha(30%))"
+  },
+  "globals": {
+    "foreground": "var(--text-fg)",
+    "background": "var(--text-bg)",
+    "caret": "hsl(194, 97%, 55%)",
+    "invisibles": "hsla(0, 0%, 0%, 0.063)",
+    "line_highlight": "hsl(49, 77%, 88%)",
+    "selection": "var(--selection-bg)",
+    "selection_border": "var(--selection-bg)",
+    "selection_border_width": "0",
+    "selection_corner_radius": "2",
+    "gutter_foreground": "hsl(0, 0%, 72%)",
+    "shadow": "hsla(0, 0%, 0%, 0.27)",
+    "guide": "hsla(0, 0%, 0%, 0.063)",
+    "active_guide": "var(--black)",
+    "stack_guide": "hsla(0, 0%, 0%, 0.063)",
+    "find_highlight_foreground": "var(--find_highlight-fg)",
+    "find_highlight": "var(--find_highlight-bg)",
+    "brackets_options": "underline foreground",
+    "brackets_foreground": "var(--bracket_match-fg)",
+    "bracket_contents_options": "underline foreground",
+    "bracket_contents_foreground": "var(--bracket_match-fg)",
+    "tags_options": "underline foreground",
+    "tags_foreground": "var(--bracket_match-fg)",
+    "line_diff_width": "2",
+    "line_diff_added": "var(--line_diff_added)",
+    "line_diff_modified": "var(--line_diff_modified)",
+    "line_diff_deleted": "var(--line_diff_deleted)"
+  },
+  "rules": [
+    {
+      "scope": "invalid",
+      "foreground": "var(--invalid-fg)",
+      "background": "var(--invalid-bg)"
+    },
+    {
+      "scope": "region.redish",
+      "foreground": "var(--reddish-fg)",
+      "background": "var(--reddish-bg)"
+    },
+    {
+      "scope": "region.yellowish",
+      "foreground": "var(--flowtype-number-fg)",
+      "background": "var(--flowtype-bg)"
+    },
+    {
+      "scope": "region.greenish",
+      "foreground": "var(--greenish-fg)",
+      "background": "var(--greenish-bg)"
+    },
+    {
+      "scope": "region.bluish",
+      "foreground": "var(--bluish-fg)",
+      "background": "var(--bluish-bg)"
+    },
+    {
+      "scope": "region.purplish",
+      "foreground": "var(--purplish-fg)",
+      "background": "var(--purplish-bg)"
+    },
+    {
+      "scope": "meta.diff.range",
+      "foreground": "var(--diff_range-bg)",
+      "background": "var(--diff_range-fg)"
+    },
+    {
+      "scope": "meta.diff.header",
+      "foreground": "var(--diff_header-fg)",
+      "background": "var(--diff_header-bg)"
+    },
+    {
+      "scope": "markup.deleted",
+      "foreground": "var(--diff_deleted-fg)",
+      "background": "var(--diff_deleted-bg)"
+    },
+    {
+      "scope": "markup.changed",
+      "foreground": "var(--diff_changed-fg)",
+      "background": "var(--diff_changed-bg)"
+    },
+    {
+      "scope": "markup.inserted",
+      "foreground": "var(--diff_inserted-fg)",
+      "background": "var(--diff_inserted-bg)"
+    },
+    {
+      "scope": "source comment",
+      "foreground": "var(--gray-fg)"
+    },
+    {
+      "scope": "source string",
+      "foreground": "var(--string-fg)"
+    },
+    {
+      "scope": "source string.quoted",
+      "background": "var(--string-bg)"
+    },
+    {
+      "scope": "source punctuation.definition.string",
+      "foreground": "color(var(--string-fg) blend(var(--string-bg) 30%))"
+    },
+    {
+      "scope": "source entity.name.tag",
+      "foreground": "var(--entity-fg)"
+    },
+    {
+      "name": "function",
+      "scope": "source entity.name.function, source entity.name.method",
+      "foreground": "var(--function-fg)"
+    },
+    {
+      "name": "class",
+      "scope": "source entity.name.class, source entity.other.inherited-class",
+      "foreground": "var(--support-fg)"
+    },
+    {
+      "scope": "source keyword",
+      "foreground": "var(--keyword-fg)"
+    },
+    {
+      "scope": "source keyword.control.flow",
+      "background": "var(--flow-bg)"
+    },
+    {
+      "scope": "source constant",
+      "foreground": "var(--constant-fg)"
+    },
+    {
+      "scope": "source constant.numeric",
+      "foreground": "var(--number-fg)"
+    },
+    {
+      "scope": "source variable.parameter",
+      "foreground": "var(--parameter-fg)"
+    },
+    {
+      "scope": "source support",
+      "foreground": "var(--support-fg)"
+    },
+    {
+      "scope": "source variable.language",
+      "foreground": "var(--support-fg)"
+    },
+    {
+      "scope": "source storage",
+      "foreground": "var(--storage-fg)"
+    },
+    {
+      "scope": "text markup.underline",
+      "font_style": "underline"
+    },
+    {
+      "scope": "source.js meta.mapping.key",
+      "foreground": "var(--label-fg)"
+    },
+    {
+      "scope": "source.js storage.type.function.arrow",
+      "background": "var(--flow-bg)"
+    },
+    {
+      "name": "support",
+      "scope": "source.js support.function, source.js support.constant",
+      "foreground": "var(--text-fg)"
+    },
+    {
+      "name": "json key",
+      "scope": "source.json meta.mapping.key string.quoted",
+      "foreground": "var(--json-key-fg)",
+      "background": "var(--json-key-bg)"
+    },
+    {
+      "name": "json key quotes",
+      "scope": "source.json meta.mapping.key punctuation.definition.string",
+      "foreground": "var(--json-key-quotes-fg)"
+    },
+    {
+      "name": "json/json key",
+      "scope": "source.json meta.mapping meta.mapping.key string.quoted",
+      "foreground": "var(--json-json-key-fg)"
+    },
+    {
+      "name": "json/json key quotes",
+      "scope": "source.json meta.mapping meta.mapping.key punctuation.definition.string",
+      "foreground": "var(--json-json-key-quotes-fg)"
+    },
+    {
+      "name": "json/json/json key",
+      "scope": "source.json meta.mapping meta.mapping meta.mapping.key string.quoted",
+      "foreground": "var(--json-json-json-key-fg)"
+    },
+    {
+      "name": "json/json/json key quotes",
+      "scope": "source.json meta.mapping meta.mapping meta.mapping.key punctuation.definition.string",
+      "foreground": "var(--json-json-json-key-quotes-fg)"
+    },
+    {
+      "name": "json/json/json/json key",
+      "scope": "source.json meta.mapping meta.mapping meta.mapping meta.mapping.key string.quoted",
+      "foreground": "var(--json-json-json-json-key-fg)"
+    },
+    {
+      "name": "json/json/json/json key quotes",
+      "scope": "source.json meta.mapping meta.mapping meta.mapping meta.mapping.key punctuation.definition.string",
+      "foreground": "var(--json-json-json-json-key-quotes-fg)"
+    },
+    {
+      "name": "json/json/json/json/json key",
+      "scope": "source.json meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping.key string.quoted",
+      "foreground": "var(--json-json-json-json-json-key-fg)"
+    },
+    {
+      "name": "json/json/json/json/json key quotes",
+      "scope": "source.json meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping.key punctuation.definition.string",
+      "foreground": "var(--json-json-json-json-json-key-quotes-fg)"
+    },
+    {
+      "name": "json/json/json/json/json/json key",
+      "scope": "source.json meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping.key string.quoted",
+      "foreground": "var(--json-json-json-json-json-json-key-fg)"
+    },
+    {
+      "name": "json/json/json/json/json/json key quotes",
+      "scope": "source.json meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping.key punctuation.definition.string",
+      "foreground": "var(--json-json-json-json-json-json-key-quotes-fg)"
+    },
+    {
+      "scope": "text.html.markdown punctuation",
+      "foreground": "var(--keyword-fg)"
+    },
+    {
+      "name": "object key",
+      "scope": "source.es string.unquoted.label, source.es variable.other.readwrite.property.shorthand",
+      "foreground": "var(--label-fg)"
+    },
+    {
+      "name": "object key value separator punctuation",
+      "scope": "source.es constant punctuation",
+      "foreground": "var(--text-fg)"
+    },
+    {
+      "name": "USER_CONTANTS",
+      "scope": "source.es variable.other.readwrite.allCap, source.es variable.other.readwrite.import.allCap, source.es variable.other.readwrite.export.allCap, source.es variable.other.readwrite.property.allCap, source.es variable.other.readwrite.property.object-literal.allCap",
+      "foreground": "var(--constant-fg)",
+      "background": "var(--constant-bg)"
+    },
+    {
+      "name": "UserConstants",
+      "scope": "source.es variable.other.readwrite.initCap, source.es variable.other.readwrite.property.initCap",
+      "foreground": "var(--orange-fg)"
+    },
+    {
+      "scope": "source.es entity.name.type.new",
+      "foreground": "var(--orange-fg)"
+    },
+    {
+      "scope": "source.es storage.type.function.async.arrow",
+      "background": "var(--flow-bg)"
+    }
+  ]
+}

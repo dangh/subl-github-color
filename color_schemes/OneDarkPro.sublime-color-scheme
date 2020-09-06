@@ -1,0 +1,279 @@
+{
+  "name": "OneDarkPro",
+  "author": "DangH",
+  "variables": {
+    "--mono-1": "hsl(220, 14%, 71%)",
+    "--mono-2": "hsl(220, 9%, 55%)",
+    "--mono-3": "hsl(220, 10%, 40%)",
+    "--hue-1": "hsl(187, 47%, 55%)",
+    "--hue-2": "hsl(207, 82%, 66%)",
+    "--hue-3": "hsl(286, 60%, 67%)",
+    "--hue-4": "hsl(95, 38%, 62%)",
+    "--hue-5": "hsl(355, 65%, 65%)",
+    "--hue-5-2": "hsl(5, 48%, 51%)",
+    "--hue-6": "hsl(29, 54%, 61%)",
+    "--hue-6-2": "hsl(39, 67%, 69%)",
+    "--syntax-fg": "var(--mono-1)",
+    "--syntax-bg": "hsl(220, 13%, 18%)",
+    "--syntax-gutter": "color(var(--syntax-fg) lightness(- 26%))",
+    "--syntax-guide": "color(var(--syntax-fg) alpha(- 15%))",
+    "--syntax-accent": "hsl(220, 100%, 66%)",
+    "--syntax-text-color": "var(--syntax-fg)",
+    "--syntax-cursor-color": "var(--syntax-accent)",
+    "--syntax-selection-color": "color(var(--syntax-background-color) lightness(+ 10%))",
+    "--syntax-selection-flash-color": "var(--syntax-accent)",
+    "--syntax-background-color": "var(--syntax-bg)",
+    "--syntax-wrap-guide-color": "var(--syntax-guide)",
+    "--syntax-indent-guide-color": "var(--syntax-guide)",
+    "--syntax-invisible-character-color": "var(--syntax-guide)",
+    "--syntax-result-marker-color": "color(var(--syntax-accent) alpha(- 24%))",
+    "--syntax-result-marker-color-selected": "var(--syntax-accent)",
+    "--syntax-gutter-text-color": "var(--syntax-gutter)",
+    "--syntax-gutter-text-color-selected": "var(--syntax-fg)",
+    "--syntax-gutter-background-color": "var(--syntax-bg)",
+    "--syntax-gutter-background-color-selected": "color(var(--syntax-bg) lightness(+ 8%))",
+    "--syntax-color-renamed": "hsl(208, 100%, 60%)",
+    "--syntax-color-added": "hsl(150, 60%, 54%)",
+    "--syntax-color-modified": "hsl(40, 60%, 70%)",
+    "--syntax-color-removed": "hsl(0, 70%, 60%)",
+    "--syntax-color-variable": "var(--hue-5)",
+    "--syntax-color-constant": "var(--hue-6)",
+    "--syntax-color-property": "var(--syntax-fg)",
+    "--syntax-color-value": "var(--syntax-fg)",
+    "--syntax-color-function": "var(--hue-2)",
+    "--syntax-color-method": "var(--hue-2)",
+    "--syntax-color-class": "var(--hue-6-2)",
+    "--syntax-color-keyword": "var(--hue-3)",
+    "--syntax-color-tag": "var(--hue-5)",
+    "--syntax-color-attribute": "var(--hue-6)",
+    "--syntax-color-import": "var(--hue-3)",
+    "--syntax-color-snippet": "var(--hue-4)",
+    "--syntax-cursor-line": "hsla(220, 100%,  80%, .04)",
+    "--syntax-deprecated-fg": "color(var(--syntax-color-modified) lightness(- 50%))",
+    "--syntax-deprecated-bg": "var(--syntax-color-modified)",
+    "--syntax-illegal-fg": "white",
+    "--syntax-illegal-bg": "var(--syntax-color-removed)",
+    "--syntax-color-comment": "var(--mono-3)",
+    "--syntax-color-storage": "var(--hue-3)",
+    "--syntax-color-string": "var(--hue-4)",
+    "--syntax-color-punctuation": "var(--mono-1)",
+    "--syntax-color-type": "var(--hue-1)",
+    "--syntax-color-regexp": "var(--hue-1)",
+    "--syntax-color-symbol": "var(--hue-1)",
+    "--syntax-color-escape": "var(--hue-1)",
+    "--syntax-color-operator": "var(--hue-1)",
+    "--syntax-color-language": "var(--hue-1)",
+    "--syntax-color-support": "var(--hue-1)",
+    "--syntax-markup-bold-color": "var(--hue-6)",
+    "--syntax-markup-italic-color": "var(--hue-3)",
+    "--syntax-markup-heading-color": "var(--hue-5)",
+    "--syntax-markup-link-color": "var(--hue-1)",
+    "--syntax-markup-link-description-color": "var(--hue-2)",
+    "--syntax-markup-raw-color": "var(--hue-4)",
+    "--syntax-markup-list-color": "var(--hue-3)"
+  },
+  "globals": {
+    "background": "var(--syntax-background-color)",
+    "foreground": "var(--syntax-text-color)",
+    "invisibles": "var(--syntax-invisible-character-color)",
+    "caret": "var(--syntax-cursor-color)",
+    "block_caret": "color(var(--syntax-cursor-color) alpha(0.5))",
+    "line_highlight": "var(--syntax-cursor-line)",
+    "gutter": "color(var(--syntax-gutter-background-color) alpha(0.6))",
+    "gutter_foreground": "color(var(--syntax-gutter-text-color) alpha(0.6))",
+    "gutter_foreground_highlight": "color(var(--syntax-gutter-text-color-selected) alpha(0.6))",
+    "line_diff_width": "2",
+    "line_diff_added": "color(var(--syntax-color-added) alpha(0.6))",
+    "line_diff_modified": "color(var(--syntax-color-modified) alpha(0.6))",
+    "line_diff_deleted": "color(var(--syntax-color-removed) alpha(0.6))",
+    "selection": "var(--syntax-selection-color)",
+    "selection_border_width": "0",
+    "selection_corner_style": "square",
+    "highlight": "var(--syntax-result-marker-color)",
+    "find_highlight": "var(--syntax-result-marker-color-selected)",
+    "guide": "var(--syntax-indent-guide-color)",
+    "brackets_options": "underline",
+    "brackets_foreground": "var(--syntax-selection-flash-color)",
+    "tags_options": "underline foreground",
+    "tags_foreground": "var(--syntax-selection-flash-color)",
+    "shadow_width": "0"
+  },
+  "rules": [
+    {
+      "scope": "invalid",
+      "foreground": "var(--syntax-illegal-fg)",
+      "background": "var(--syntax-illegal-bg)"
+    },
+    {
+      "name": "meta.diff.range",
+      "scope": "meta.diff.range, meta.diff.range punctuation",
+      "foreground": "var(--hue-1)"
+    },
+    {
+      "name": "meta.diff.header",
+      "scope": "meta.diff.header, meta.diff.header punctuation",
+      "foreground": "var(--hue-3)"
+    },
+    {
+      "name": "markup.deleted",
+      "scope": "markup.deleted, markup.deleted punctuation",
+      "foreground": "var(--syntax-color-removed)"
+    },
+    {
+      "name": "markup.changed",
+      "scope": "markup.changed, markup.changed punctuation",
+      "foreground": "var(--syntax-color-modified)"
+    },
+    {
+      "name": "markup.inserted",
+      "scope": "markup.inserted, markup.inserted punctuation",
+      "foreground": "var(--syntax-color-added)"
+    },
+    {
+      "scope": "text markup.underline",
+      "foreground": "var(--syntax-markup-link-color)",
+      "font_style": "underline"
+    },
+    {
+      "scope": "text markup.heading",
+      "foreground": "var(--syntax-markup-heading-color)"
+    },
+    {
+      "scope": "text markup.bold",
+      "foreground": "var(--syntax-markup-bold-color)",
+      "font_style": "bold"
+    },
+    {
+      "scope": "text markup.italic",
+      "foreground": "var(--syntax-markup-italic-color)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "text markup.raw",
+      "foreground": "var(--syntax-markup-raw-color)"
+    },
+    {
+      "scope": "text meta.link.inline.description",
+      "foreground": "var(--syntax-markup-link-description-color)"
+    },
+    {
+      "scope": "text punctuation.definition.list_item",
+      "foreground": "var(--syntax-markup-list-color)"
+    },
+    {
+      "name": "comment",
+      "scope": "source comment, source punctuation.definition.comment",
+      "foreground": "var(--syntax-color-comment)",
+      "selection_foreground": "color(var(--syntax-color-comment) lightness(+ 15%))"
+    },
+    {
+      "name": "string",
+      "scope": "source string, source punctuation.definition.string",
+      "foreground": "var(--syntax-color-string)"
+    },
+    {
+      "scope": "source constant",
+      "foreground": "var(--syntax-color-constant)"
+    },
+    {
+      "scope": "source keyword",
+      "foreground": "var(--syntax-color-keyword)"
+    },
+    {
+      "scope": "source storage",
+      "foreground": "var(--syntax-color-storage)"
+    },
+    {
+      "scope": "source storage.type.accessor",
+      "foreground": "var(--syntax-color-type)"
+    },
+    {
+      "scope": "source punctuation",
+      "foreground": "var(--syntax-color-punctuation)"
+    },
+    {
+      "name": "class",
+      "scope": "source entity.name.class, source entity.other.inherited-class, source support.class, source support.constant.builtin",
+      "foreground": "var(--syntax-color-class)"
+    },
+    {
+      "scope": "source entity.name.function",
+      "foreground": "var(--syntax-color-function)"
+    },
+    {
+      "scope": "source entity.name.method",
+      "foreground": "var(--syntax-color-method)"
+    },
+    {
+      "scope": "source entity.name.tag",
+      "foreground": "var(--syntax-color-tag)"
+    },
+    {
+      "name": "property",
+      "scope": "source meta.property.object, source meta.mapping.key",
+      "foreground": "var(--syntax-color-variable)"
+    },
+    {
+      "name": "operator",
+      "scope": "source keyword.operator - keyword.operator.word - keyword.operator.new, source punctuation.separator.key-value",
+      "foreground": "var(--syntax-color-operator)"
+    },
+    {
+      "name": "support",
+      "scope": "source support.function",
+      "foreground": "var(--syntax-color-support)"
+    },
+    {
+      "scope": "source source.regexp",
+      "foreground": "var(--syntax-color-regexp)"
+    },
+    {
+      "scope": "source constant.character.escape",
+      "foreground": "var(--syntax-color-escape)"
+    },
+    {
+      "name": "key",
+      "scope": "source.json meta.mapping.key string",
+      "foreground": "var(--syntax-color-variable)"
+    },
+    {
+      "name": "punctuation",
+      "scope": "source.json punctuation.definition.string",
+      "foreground": "var(--syntax-fg)"
+    },
+    {
+      "name": "support",
+      "scope": "source.js variable.language.super, source.js support.function.node",
+      "foreground": "var(--syntax-color-language)"
+    },
+    {
+      "name": "USER_CONTANTS",
+      "scope": "source.es variable.other.readwrite.allCap, source.es variable.other.readwrite.import.allCap, source.es variable.other.readwrite.export.allCap, source.es variable.other.readwrite.property.allCap, source.es variable.other.readwrite.property.object-literal.allCap",
+      "foreground": "var(--syntax-color-constant)"
+    },
+    {
+      "name": "UserConstants",
+      "scope": "source.es variable.other.readwrite.initCap",
+      "foreground": "var(--syntax-color-class)"
+    },
+    {
+      "scope": "source.es variable.other.readwrite.property",
+      "foreground": "var(--syntax-color-variable)"
+    },
+    {
+      "name": "function invocation",
+      "scope": "source.es meta.function-call",
+      "foreground": "var(--syntax-color-function)"
+    },
+    {
+      "name": "support",
+      "scope": "source.es variable.language.super",
+      "foreground": "var(--syntax-color-language)"
+    },
+    {
+      "name": "class",
+      "scope": "source.es meta.instantiation",
+      "foreground": "var(--syntax-color-class)"
+    }
+  ]
+}

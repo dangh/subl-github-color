@@ -1,0 +1,262 @@
+name: GitHub
+author: DangH
+
+variables:
+  #base colors
+  --black: hsl(0, 0%, 20%)
+  --white: hsl(0, 0%, 100%)
+  --red.bg: hsl(0, 100%, 96%)
+  --red.fg: hsl(332, 70%, 38%)
+  --blue.bg: hsla(210, 95%, 85%, 0.2)
+  --blue.fg: hsl(225, 72%, 33%)
+  --green.bg: hsla(111, 26%, 95%, 0.6)
+  --green.fg: hsl(142, 100%, 33%)
+  --yellow.fg: hsl(32, 98%, 56%)
+  --orange.fg: hsl(14, 83%, 60%)
+  --gray.fg: hsl(120, 1%, 59%)
+  --purple.fg: hsl(264, 28%, 50%)
+  --cyan.fg: hsl(195, 100%, 35%)
+  #global colors
+  --selection.bg: hsl(210, 95%, 85%)
+  --find_highlight.fg: --black
+  --find_highlight.bg: hsl(47, 100%, 79%)
+  --bracket_match.fg: hsl(2, 96%, 67%)
+  --line_diff_added: color(hsl(132, 60%, 44%) a(0.6))
+  --line_diff_modified: color(hsl(40, 90%, 50%) a(0.6))
+  --line_diff_deleted: color(hsl(360, 100%, 54%) a(0.6))
+  #scope colors
+  --invalid.bg: hsl(305, 98%, 68%)
+  --invalid.fg: hsl(300, 31%, 26%)
+  --diff_range.bg: hsla(210, 13%, 12%, 0.5)
+  --diff_range.fg: hsl(210, 100%, 97%)
+  --diff_header.bg: hsl(210, 100%, 93%)
+  --diff_header.fg: hsl(210, 12%, 30%)
+  --diff_deleted.bg: --red.bg
+  --diff_deleted.fg: --red.fg
+  --diff_changed.bg: hsl(46, 78%, 31%)
+  --diff_changed.fg: hsl(51, 54%, 97%)
+  --diff_inserted.bg: hsl(120, 100%, 96%)
+  --diff_inserted.fg: hsl(125, 61%, 26%)
+  --bluish.bg: hsl(257, 37%, 96%)
+  --bluish.fg: hsl(204, 100%, 37%)
+  --purplish.bg: hsla(253, 100%, 81%, 0.2)
+  --purplish.fg: hsl(244, 41%, 33%)
+  --reddish.bg: hsl(343, 37%, 96%)
+  --reddish.fg: hsl(345, 69%, 46%)
+  --greenish.bg: --green.bg
+  --greenish.fg: --green.fg
+  --yellowish.bg: hsl(51, 54%, 97%)
+  --yellowish.fg: hsl(30, 88%, 43%)
+  --string.fg: --blue.fg
+  --string.bg: --blue.bg
+  --constant.bg: --green.bg
+  --constant.fg: --green.fg
+  --parameter.fg: --yellow.fg
+  --support.fg: --orange.fg
+  --storage.fg: --red.fg
+  --keyword.fg: --red.fg
+  --flow.bg: --red.bg
+  --entity.fg: --green.fg
+  --function.fg: --purple.fg
+  --number.fg: --green.fg
+  --label.fg: --cyan.fg
+  --text.fg: --black
+  --text.bg: --white
+  #syntax colors
+  --json-key.bg: ''
+  --json-key.fg: --red.fg
+  --json-key-quotes.fg: color(--json-key.fg alpha(30%))
+  --json/json-key.fg: color(--red.fg lightness(+ 10%) saturation(- 20%))
+  --json/json-key-quotes.fg: color(--json/json-key.fg alpha(30%))
+  --json/json/json-key.fg: --red.fg
+  --json/json/json-key-quotes.fg: color(--json/json/json-key.fg alpha(30%))
+  --json/json/json/json-key.fg: color(--red.fg lightness(+ 10%) saturation(- 20%))
+  --json/json/json/json-key-quotes.fg: color(--json/json/json/json-key.fg alpha(30%))
+  --json/json/json/json/json-key.fg: --red.fg
+  --json/json/json/json/json-key-quotes.fg: color(--json/json/json/json/json-key.fg alpha(30%))
+  --json/json/json/json/json/json-key.fg: color(--red.fg lightness(+ 10%) saturation(- 20%))
+  --json/json/json/json/json/json-key-quotes.fg: color(--json/json/json/json/json/json-key.fg alpha(30%))
+
+globals:
+  foreground: --text.fg
+  background: --text.bg
+  caret: hsl(194, 97%, 55%)
+  invisibles: hsla(0, 0%, 0%, 0.063)
+  line_highlight: hsl(49, 77%, 88%)
+  selection: --selection.bg
+  selection_border: --selection.bg
+  selection_border_width: 0
+  selection_corner_radius: 2
+  gutter_foreground: hsl(0, 0%, 72%)
+  shadow: hsla(0, 0%, 0%, 0.27)
+  guide: hsla(0, 0%, 0%, 0.063)
+  active_guide: --black
+  stack_guide: hsla(0, 0%, 0%, 0.063)
+  find_highlight_foreground: --find_highlight.fg
+  find_highlight: --find_highlight.bg
+  brackets_options: underline foreground
+  brackets_foreground: --bracket_match.fg
+  bracket_contents_options: underline foreground
+  bracket_contents_foreground: --bracket_match.fg
+  tags_options: underline foreground
+  tags_foreground: --bracket_match.fg
+  line_diff_width: 2
+  line_diff_added: --line_diff_added
+  line_diff_modified: --line_diff_modified
+  line_diff_deleted: --line_diff_deleted
+
+syntax:
+  '':
+    invalid:
+      foreground: --invalid.fg
+      background: --invalid.bg
+    region.redish:
+      foreground: --reddish.fg
+      background: --reddish.bg
+    region.yellowish:
+      foreground: --flowtype-number-fg
+      background: --flowtype-bg
+    region.greenish:
+      foreground: --greenish.fg
+      background: --greenish.bg
+    region.bluish:
+      foreground: --bluish.fg
+      background: --bluish.bg
+    region.purplish:
+      foreground: --purplish.fg
+      background: --purplish.bg
+    meta.diff.range:
+      foreground: --diff_range.bg
+      background: --diff_range.fg
+    meta.diff.header:
+      foreground: --diff_header.fg
+      background: --diff_header.bg
+    markup.deleted:
+      foreground: --diff_deleted.fg
+      background: --diff_deleted.bg
+    markup.changed:
+      foreground: --diff_changed.fg
+      background: --diff_changed.bg
+    markup.inserted:
+      foreground: --diff_inserted.fg
+      background: --diff_inserted.bg
+  source:
+    comment:
+      foreground: --gray.fg
+    string:
+      foreground: --string.fg
+    string.quoted:
+      background: --string.bg
+    punctuation.definition.string:
+      foreground: color(--string.fg blend(--string.bg 30%))
+    entity.name.tag:
+      foreground: --entity.fg
+    function:
+      scope:
+        - entity.name.function
+        - entity.name.method
+      foreground: --function.fg
+    class:
+      scope:
+        - entity.name.class
+        - entity.other.inherited-class
+      foreground: --support.fg
+    keyword:
+      foreground: --keyword.fg
+    keyword.control.flow:
+      background: --flow.bg
+    constant:
+      foreground: --constant.fg
+    constant.numeric:
+      foreground: --number.fg
+    variable.parameter:
+      foreground: --parameter.fg
+    support:
+      foreground: --support.fg
+    variable.language:
+      foreground: --support.fg
+    storage:
+      foreground: --storage.fg
+
+  text:
+    markup.underline:
+      font_style: underline
+  source.js:
+    meta.mapping.key:
+      foreground: --label.fg
+    storage.type.function.arrow:
+      background: --flow.bg
+    support:
+      scope:
+        - support.function #require()
+        - support.constant #process.env
+      foreground: --text.fg
+  source.json:
+    json key:
+      scope: meta.mapping.key string.quoted
+      foreground: --json-key.fg
+      background: --json-key.bg
+    json key quotes:
+      scope: meta.mapping.key punctuation.definition.string
+      foreground: --json-key-quotes.fg
+    json/json key:
+      scope: meta.mapping meta.mapping.key string.quoted
+      foreground: --json/json-key.fg
+    json/json key quotes:
+      scope: meta.mapping meta.mapping.key punctuation.definition.string
+      foreground: --json/json-key-quotes.fg
+    json/json/json key:
+      scope: meta.mapping meta.mapping meta.mapping.key string.quoted
+      foreground: --json/json/json-key.fg
+    json/json/json key quotes:
+      scope: meta.mapping meta.mapping meta.mapping.key punctuation.definition.string
+      foreground: --json/json/json-key-quotes.fg
+    json/json/json/json key:
+      scope: meta.mapping meta.mapping meta.mapping meta.mapping.key string.quoted
+      foreground: --json/json/json/json-key.fg
+    json/json/json/json key quotes:
+      scope: meta.mapping meta.mapping meta.mapping meta.mapping.key punctuation.definition.string
+      foreground: --json/json/json/json-key-quotes.fg
+    json/json/json/json/json key:
+      scope: meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping.key string.quoted
+      foreground: --json/json/json/json/json-key.fg
+    json/json/json/json/json key quotes:
+      scope: meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping.key punctuation.definition.string
+      foreground: --json/json/json/json/json-key-quotes.fg
+    json/json/json/json/json/json key:
+      scope: meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping.key string.quoted
+      foreground: --json/json/json/json/json/json-key.fg
+    json/json/json/json/json/json key quotes:
+      scope: meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping meta.mapping.key punctuation.definition.string
+      foreground: --json/json/json/json/json/json-key-quotes.fg
+  text.html.markdown:
+    punctuation:
+      foreground: --keyword.fg
+  source.es:
+    object key:
+      scope:
+        - string.unquoted.label
+        - variable.other.readwrite.property.shorthand
+      foreground: --label.fg
+    object key value separator punctuation:
+      scope:
+        - constant punctuation
+      foreground: --text.fg
+    USER_CONTANTS:
+      scope:
+        - variable.other.readwrite.allCap
+        - variable.other.readwrite.import.allCap
+        - variable.other.readwrite.export.allCap
+        - variable.other.readwrite.property.allCap
+        - variable.other.readwrite.property.object-literal.allCap
+      foreground: --constant.fg
+      background: --constant.bg
+    UserConstants:
+      scope:
+        - variable.other.readwrite.initCap
+        - variable.other.readwrite.property.initCap
+      foreground: --orange.fg
+    entity.name.type.new:
+      foreground: --orange.fg
+    storage.type.function.async.arrow:
+      background: --flow.bg

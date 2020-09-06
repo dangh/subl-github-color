@@ -1,0 +1,274 @@
+name: OneDarkPro
+author: DangH
+
+one-dark-syntax: &one-dark-syntax
+  # colors
+  --mono-1: hsl(220, 14%, 71%)
+  --mono-2: hsl(220, 9%, 55%)
+  --mono-3: hsl(220, 10%, 40%)
+  --hue-1: hsl(187, 47%, 55%) # <-cyan
+  --hue-2: hsl(207, 82%, 66%) # <-blue
+  --hue-3: hsl(286, 60%, 67%) # <-purple
+  --hue-4: hsl(95, 38%, 62%) # <-green
+  --hue-5: hsl(355, 65%, 65%) # <-red 1
+  --hue-5-2: hsl(5, 48%, 51%) # <-red 2
+  --hue-6: hsl(29, 54%, 61%) # <-orange 1
+  --hue-6-2: hsl(39, 67%, 69%) # <-orange 2
+  --syntax-fg: --mono-1
+  --syntax-bg: hsl(220, 13%, 18%)
+  --syntax-gutter: color(--syntax-fg lightness(- 26%))
+  --syntax-guide: color(--syntax-fg alpha(- 15%))
+  --syntax-accent: hsl(220, 100%, 66%)
+  # syntax-variables
+  --syntax-text-color: --syntax-fg
+  --syntax-cursor-color: --syntax-accent
+  --syntax-selection-color: color(--syntax-background-color lightness(+ 10%))
+  --syntax-selection-flash-color: --syntax-accent
+  --syntax-background-color: --syntax-bg
+  --syntax-wrap-guide-color: --syntax-guide
+  --syntax-indent-guide-color: --syntax-guide
+  --syntax-invisible-character-color: --syntax-guide
+  --syntax-result-marker-color: color(--syntax-accent alpha(- 24%))
+  --syntax-result-marker-color-selected: --syntax-accent
+  --syntax-gutter-text-color: --syntax-gutter
+  --syntax-gutter-text-color-selected: --syntax-fg
+  --syntax-gutter-background-color: --syntax-bg
+  --syntax-gutter-background-color-selected: color(--syntax-bg lightness(+ 8%))
+  --syntax-color-renamed: hsl(208, 100%, 60%)
+  --syntax-color-added: hsl(150, 60%, 54%)
+  --syntax-color-modified: hsl(40, 60%, 70%)
+  --syntax-color-removed: hsl(0, 70%, 60%)
+  --syntax-color-variable: --hue-5
+  --syntax-color-constant: --hue-6
+  --syntax-color-property: --syntax-fg
+  --syntax-color-value: --syntax-fg
+  --syntax-color-function: --hue-2
+  --syntax-color-method: --hue-2
+  --syntax-color-class: --hue-6-2
+  --syntax-color-keyword: --hue-3
+  --syntax-color-tag: --hue-5
+  --syntax-color-attribute: --hue-6
+  --syntax-color-import: --hue-3
+  --syntax-color-snippet: --hue-4
+  --syntax-cursor-line: hsla(220, 100%,  80%, .04)
+  --syntax-deprecated-fg: color(--syntax-color-modified lightness(- 50%))
+  --syntax-deprecated-bg: --syntax-color-modified
+  --syntax-illegal-fg: white
+  --syntax-illegal-bg: --syntax-color-removed
+  # syntax-bases
+  --syntax-color-comment: --mono-3
+  --syntax-color-storage: --hue-3
+  --syntax-color-string: --hue-4
+  --syntax-color-punctuation: --mono-1
+  --syntax-color-type: --hue-1
+  --syntax-color-regexp: --hue-1
+  --syntax-color-symbol: --hue-1
+  --syntax-color-escape: --hue-1
+  --syntax-color-operator: --hue-1
+  --syntax-color-language: --hue-1
+  --syntax-color-support: --hue-1
+  --syntax-markup-bold-color: --hue-6
+  --syntax-markup-italic-color: --hue-3
+  --syntax-markup-heading-color: --hue-5
+  --syntax-markup-link-color: --hue-1
+  --syntax-markup-link-description-color: --hue-2
+  --syntax-markup-raw-color: --hue-4
+  --syntax-markup-list-color: --hue-3
+
+variables:
+  <<: *one-dark-syntax
+  #base colors
+  #global colors
+  #scope colors
+  #syntax colors
+
+globals:
+  background: --syntax-background-color
+  foreground: --syntax-text-color
+  invisibles: --syntax-invisible-character-color
+  caret: --syntax-cursor-color
+  block_caret: color(--syntax-cursor-color alpha(0.5))
+  line_highlight: --syntax-cursor-line
+  # misspelling
+  # fold_marker
+  # minimap_border
+  # scroll_highlight
+  # scroll_selected_highlight
+  # accent
+  # popup_css
+  # phantom_css
+  # sheet_css
+  gutter: color(--syntax-gutter-background-color alpha(0.6))
+  gutter_foreground: color(--syntax-gutter-text-color alpha(0.6))
+  gutter_foreground_highlight: color(--syntax-gutter-text-color-selected alpha(0.6))
+  line_diff_width: 2
+  line_diff_added: color(--syntax-color-added alpha(0.6))
+  line_diff_modified: color(--syntax-color-modified alpha(0.6))
+  line_diff_deleted: color(--syntax-color-removed alpha(0.6))
+  selection: --syntax-selection-color
+  # selection_foreground
+  # selection_border
+  selection_border_width: 0
+  # inactive_selection
+  # inactive_selection_border
+  # inactive_selection_foreground
+  selection_corner_style: square
+  # selection_corner_radius
+  highlight: --syntax-result-marker-color
+  find_highlight: --syntax-result-marker-color-selected
+  # find_highlight_foreground
+  guide: --syntax-indent-guide-color
+  # active_guide
+  # stack_guide
+  brackets_options: underline
+  brackets_foreground: --syntax-selection-flash-color
+  # bracket_contents_options
+  # bracket_contents_foreground
+  tags_options: underline foreground
+  tags_foreground: --syntax-selection-flash-color
+  # shadow
+  shadow_width: 0
+
+syntax:
+  '':
+    invalid:
+      foreground: --syntax-illegal-fg
+      background: --syntax-illegal-bg
+    meta.diff.range:
+      scope:
+        - meta.diff.range
+        - meta.diff.range punctuation
+      foreground: --hue-1
+    meta.diff.header:
+      scope:
+        - meta.diff.header
+        - meta.diff.header punctuation
+      foreground: --hue-3
+    markup.deleted:
+      scope:
+        - markup.deleted
+        - markup.deleted punctuation
+      foreground: --syntax-color-removed
+    markup.changed:
+      scope:
+        - markup.changed
+        - markup.changed punctuation
+      foreground: --syntax-color-modified
+    markup.inserted:
+      scope:
+        - markup.inserted
+        - markup.inserted punctuation
+      foreground: --syntax-color-added
+  text:
+    markup.underline:
+      foreground: --syntax-markup-link-color
+      font_style: underline
+    markup.heading:
+      foreground: --syntax-markup-heading-color
+    markup.bold:
+      foreground: --syntax-markup-bold-color
+      font_style: bold
+    markup.italic:
+      foreground: --syntax-markup-italic-color
+      font_style: italic
+    markup.raw:
+      foreground: --syntax-markup-raw-color
+    meta.link.inline.description:
+      foreground: --syntax-markup-link-description-color
+    punctuation.definition.list_item:
+      foreground: --syntax-markup-list-color
+  source:
+    comment:
+      scope:
+        - comment
+        - punctuation.definition.comment
+      foreground: --syntax-color-comment
+      selection_foreground: color(--syntax-color-comment lightness(+ 15%))
+    string:
+      scope:
+        - string
+        - punctuation.definition.string
+      foreground: --syntax-color-string
+    constant:
+      foreground: --syntax-color-constant
+    keyword:
+      foreground: --syntax-color-keyword
+    storage:
+      foreground: --syntax-color-storage
+    storage.type.accessor:
+      foreground: --syntax-color-type
+    punctuation:
+      foreground: --syntax-color-punctuation
+    class:
+      scope:
+        - entity.name.class
+        - entity.other.inherited-class
+        - support.class
+        - support.constant.builtin
+      foreground: --syntax-color-class
+    entity.name.function:
+      foreground: --syntax-color-function
+    entity.name.method:
+      foreground: --syntax-color-method
+    entity.name.tag:
+      foreground: --syntax-color-tag
+    property:
+      scope:
+        - meta.property.object
+        - meta.mapping.key
+      foreground: --syntax-color-variable
+    operator:
+      scope:
+        - keyword.operator - keyword.operator.word - keyword.operator.new
+        - punctuation.separator.key-value
+      foreground: --syntax-color-operator
+    support:
+      scope:
+        - support.function
+      foreground: --syntax-color-support
+    source.regexp:
+      foreground: --syntax-color-regexp
+    constant.character.escape:
+      foreground: --syntax-color-escape
+  source.json:
+    key:
+      scope:
+        - meta.mapping.key string
+      foreground: --syntax-color-variable
+    punctuation:
+      scope:
+        - punctuation.definition.string
+      foreground: --syntax-fg
+  source.js:
+    support:
+      scope:
+        - variable.language.super
+        - support.function.node
+      foreground: --syntax-color-language
+  source.es:
+    USER_CONTANTS:
+      scope:
+        - variable.other.readwrite.allCap
+        - variable.other.readwrite.import.allCap
+        - variable.other.readwrite.export.allCap
+        - variable.other.readwrite.property.allCap
+        - variable.other.readwrite.property.object-literal.allCap
+      foreground: --syntax-color-constant
+    UserConstants:
+      scope:
+        - variable.other.readwrite.initCap
+      foreground: --syntax-color-class
+    variable.other.readwrite.property:
+      foreground: --syntax-color-variable
+    function invocation:
+      scope:
+        - meta.function-call
+      foreground: --syntax-color-function
+    support:
+      scope:
+        - variable.language.super
+      foreground: --syntax-color-language
+    class:
+      scope:
+        - meta.instantiation
+      foreground: --syntax-color-class
