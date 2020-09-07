@@ -81,7 +81,7 @@
     "line_highlight": "var(--syntax-cursor-line)",
     "gutter": "color(var(--syntax-gutter-background-color) alpha(0.6))",
     "gutter_foreground": "color(var(--syntax-gutter-text-color) alpha(0.6))",
-    "gutter_foreground_highlight": "color(var(--syntax-gutter-text-color-selected) alpha(0.6))",
+    "gutter_foreground_highlight": "color(var(--syntax-gutter-text-color) alpha(0.6))",
     "line_diff_width": "2",
     "line_diff_added": "color(var(--syntax-color-added) alpha(0.6))",
     "line_diff_modified": "color(var(--syntax-color-modified) alpha(0.6))",
@@ -96,6 +96,7 @@
     "brackets_foreground": "var(--syntax-selection-flash-color)",
     "tags_options": "underline foreground",
     "tags_foreground": "var(--syntax-selection-flash-color)",
+    "shadow": "",
     "shadow_width": "0"
   },
   "rules": [
@@ -191,14 +192,17 @@
       "foreground": "var(--syntax-color-class)"
     },
     {
+      "name": "function",
       "scope": "source entity.name.function",
       "foreground": "var(--syntax-color-function)"
     },
     {
+      "name": "method",
       "scope": "source entity.name.method",
       "foreground": "var(--syntax-color-method)"
     },
     {
+      "name": "tag",
       "scope": "source entity.name.tag",
       "foreground": "var(--syntax-color-tag)"
     },
@@ -214,14 +218,16 @@
     },
     {
       "name": "support",
-      "scope": "source support.function",
+      "scope": "source support.function, source support.variable",
       "foreground": "var(--syntax-color-support)"
     },
     {
+      "name": "regexp",
       "scope": "source source.regexp",
       "foreground": "var(--syntax-color-regexp)"
     },
     {
+      "name": "escape",
       "scope": "source constant.character.escape",
       "foreground": "var(--syntax-color-escape)"
     },
@@ -268,6 +274,16 @@
       "name": "class",
       "scope": "source.es meta.instantiation",
       "foreground": "var(--syntax-color-class)"
+    },
+    {
+      "name": "parameter",
+      "scope": "source.python variable.parameter",
+      "foreground": "var(--syntax-color-constant)"
+    },
+    {
+      "name": "operator",
+      "scope": "source.python keyword.operator",
+      "foreground": "var(--syntax-color-keyword)"
     }
   ]
 }

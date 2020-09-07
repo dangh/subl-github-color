@@ -100,7 +100,7 @@ globals:
   # sheet_css
   gutter: color(--syntax-gutter-background-color alpha(0.6))
   gutter_foreground: color(--syntax-gutter-text-color alpha(0.6))
-  gutter_foreground_highlight: color(--syntax-gutter-text-color-selected alpha(0.6))
+  gutter_foreground_highlight: color(--syntax-gutter-text-color alpha(0.6))
   line_diff_width: 2
   line_diff_added: color(--syntax-color-added alpha(0.6))
   line_diff_modified: color(--syntax-color-modified alpha(0.6))
@@ -126,7 +126,7 @@ globals:
   # bracket_contents_foreground
   tags_options: underline foreground
   tags_foreground: --syntax-selection-flash-color
-  # shadow
+  shadow: ''
   shadow_width: 0
 
 syntax:
@@ -187,11 +187,17 @@ syntax:
         - support.class
         - support.constant.builtin
       foreground: --syntax-color-class
-    entity.name.function:
+    function:
+      scope:
+        - entity.name.function
       foreground: --syntax-color-function
-    entity.name.method:
+    method:
+      scope:
+        - entity.name.method
       foreground: --syntax-color-method
-    entity.name.tag:
+    tag:
+      scope:
+        - entity.name.tag
       foreground: --syntax-color-tag
     property:
       scope:
@@ -206,10 +212,15 @@ syntax:
     support:
       scope:
         - support.function
+        - support.variable
       foreground: --syntax-color-support
-    source.regexp:
+    regexp:
+      scope:
+        - source.regexp
       foreground: --syntax-color-regexp
-    constant.character.escape:
+    escape:
+      scope:
+        - constant.character.escape
       foreground: --syntax-color-escape
   source.json:
     key:
@@ -253,3 +264,12 @@ syntax:
       scope:
         - meta.instantiation
       foreground: --syntax-color-class
+  source.python:
+    parameter:
+      scope:
+        - variable.parameter
+      foreground: --syntax-color-constant
+    operator:
+      scope:
+        - keyword.operator
+      foreground: --syntax-color-keyword

@@ -60,19 +60,16 @@ if __name__ == '__main__':
 
 	color_schemes = ['GitHub', 'OneDarkPro']
 	for color_scheme in color_schemes:
-		if args.dev:
-			dst_dir = path.join(Path.home(), 'Library/Application Support/Sublime Text/Packages/User')
-			dst = '{}-dev.sublime-color-scheme'.format(color_scheme)
-		else:
-			dst_dir = 'color_schemes'
-			dst = '{}.sublime-color-scheme'.format(color_scheme)
-		if not path.exists(dst_dir):
-			os.makedirs(dst_dir)
-
 		src = 'color_schemes/{}.yml'.format(color_scheme)
-		dst = path.join(dst_dir, dst)
+
+		dsts = ['color_schemes/{}.sublime-color-scheme'.format(color_scheme)]
+
+		if args.dev:
+			dsts += ['{}/Library/Application Support/Sublime Text/Packages/User/{}-dev.sublime-color-scheme'.format(Path.home(), color_scheme)]
 
 		with open(src) as infile:
 			data = yaml.load(infile, Loader=yaml.FullLoader)
-			with open(dst, 'w') as outfile:
-				json.dump(build(data), outfile, indent=2)
+			result = build(data)
+			for dst in dsts:
+				with open(dst, 'w') as outfile:
+					json.dump(result, outfile, indent=2)
