@@ -70,7 +70,8 @@
     "--syntax-markup-link-color": "var(--hue-1)",
     "--syntax-markup-link-description-color": "var(--hue-2)",
     "--syntax-markup-raw-color": "var(--hue-4)",
-    "--syntax-markup-list-color": "var(--hue-3)"
+    "--syntax-markup-list-color": "var(--hue-3)",
+    "--syntax-color-parameter": "var(--hue-6)"
   },
   "globals": {
     "background": "var(--syntax-background-color)",
@@ -232,6 +233,11 @@
       "foreground": "var(--syntax-color-escape)"
     },
     {
+      "name": "parameter",
+      "scope": "source variable.parameter",
+      "foreground": "var(--syntax-color-parameter)"
+    },
+    {
       "name": "key",
       "scope": "source.json meta.mapping.key string",
       "foreground": "var(--syntax-color-variable)"
@@ -245,6 +251,11 @@
       "name": "support",
       "scope": "source.js variable.language.super, source.js support.function.node",
       "foreground": "var(--syntax-color-language)"
+    },
+    {
+      "name": "parameter",
+      "scope": "source.js variable.parameter",
+      "foreground": "var(--syntax-fg)"
     },
     {
       "name": "USER_CONTANTS",
@@ -261,7 +272,7 @@
       "foreground": "var(--syntax-color-variable)"
     },
     {
-      "name": "function invocation",
+      "name": "function-call",
       "scope": "source.es meta.function-call",
       "foreground": "var(--syntax-color-function)"
     },
@@ -274,11 +285,6 @@
       "name": "class",
       "scope": "source.es meta.instantiation",
       "foreground": "var(--syntax-color-class)"
-    },
-    {
-      "name": "parameter",
-      "scope": "source.python variable.parameter",
-      "foreground": "var(--syntax-color-constant)"
     },
     {
       "name": "operator",

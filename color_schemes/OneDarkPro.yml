@@ -80,6 +80,7 @@ variables:
   #base colors
   #global colors
   #scope colors
+  --syntax-color-parameter: --hue-6
   #syntax colors
 
 globals:
@@ -222,6 +223,10 @@ syntax:
       scope:
         - constant.character.escape
       foreground: --syntax-color-escape
+    parameter:
+      scope:
+        - variable.parameter
+      foreground: --syntax-color-parameter
   source.json:
     key:
       scope:
@@ -237,6 +242,10 @@ syntax:
         - variable.language.super
         - support.function.node
       foreground: --syntax-color-language
+    parameter:
+      scope:
+        - variable.parameter
+      foreground: --syntax-fg
   source.es:
     USER_CONTANTS:
       scope:
@@ -252,7 +261,7 @@ syntax:
       foreground: --syntax-color-class
     variable.other.readwrite.property:
       foreground: --syntax-color-variable
-    function invocation:
+    function-call:
       scope:
         - meta.function-call
       foreground: --syntax-color-function
@@ -265,10 +274,6 @@ syntax:
         - meta.instantiation
       foreground: --syntax-color-class
   source.python:
-    parameter:
-      scope:
-        - variable.parameter
-      foreground: --syntax-color-constant
     operator:
       scope:
         - keyword.operator
