@@ -135,29 +135,14 @@ syntax:
       foreground: --syntax-illegal-fg
       background: --syntax-illegal-bg
     meta.diff.range:
-      scope:
-        - meta.diff.range
-        - meta.diff.range punctuation
       foreground: --hue-1
     meta.diff.header:
-      scope:
-        - meta.diff.header
-        - meta.diff.header punctuation
       foreground: --hue-3
     markup.deleted:
-      scope:
-        - markup.deleted
-        - markup.deleted punctuation
       foreground: --syntax-color-removed
     markup.changed:
-      scope:
-        - markup.changed
-        - markup.changed punctuation
       foreground: --syntax-color-modified
     markup.inserted:
-      scope:
-        - markup.inserted
-        - markup.inserted punctuation
       foreground: --syntax-color-added
   text:
     markup.underline:
@@ -179,15 +164,9 @@ syntax:
       foreground: --syntax-markup-list-color
   source:
     comment:
-      scope:
-        - comment
-        - punctuation.definition.comment
       foreground: --syntax-color-comment
       selection_foreground: color(--syntax-color-comment lightness(+ 15%))
     string:
-      scope:
-        - string
-        - punctuation.definition.string
       foreground: --syntax-color-string
     constant:
       foreground: --syntax-color-constant
@@ -198,6 +177,8 @@ syntax:
     storage.type.accessor:
       foreground: --syntax-color-type
     punctuation:
+      scope:
+        - punctuation - punctuation.definition
       foreground: --syntax-color-punctuation
     class:
       scope:

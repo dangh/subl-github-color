@@ -105,28 +105,23 @@
       "background": "var(--syntax-illegal-bg)"
     },
     {
-      "name": "meta.diff.range",
-      "scope": "meta.diff.range, meta.diff.range punctuation",
+      "scope": "meta.diff.range",
       "foreground": "var(--hue-1)"
     },
     {
-      "name": "meta.diff.header",
-      "scope": "meta.diff.header, meta.diff.header punctuation",
+      "scope": "meta.diff.header",
       "foreground": "var(--hue-3)"
     },
     {
-      "name": "markup.deleted",
-      "scope": "markup.deleted, markup.deleted punctuation",
+      "scope": "markup.deleted",
       "foreground": "var(--syntax-color-removed)"
     },
     {
-      "name": "markup.changed",
-      "scope": "markup.changed, markup.changed punctuation",
+      "scope": "markup.changed",
       "foreground": "var(--syntax-color-modified)"
     },
     {
-      "name": "markup.inserted",
-      "scope": "markup.inserted, markup.inserted punctuation",
+      "scope": "markup.inserted",
       "foreground": "var(--syntax-color-added)"
     },
     {
@@ -161,14 +156,12 @@
       "foreground": "var(--syntax-markup-list-color)"
     },
     {
-      "name": "comment",
-      "scope": "source comment, source punctuation.definition.comment",
+      "scope": "source comment",
       "foreground": "var(--syntax-color-comment)",
       "selection_foreground": "color(var(--syntax-color-comment) lightness(+ 15%))"
     },
     {
-      "name": "string",
-      "scope": "source string, source punctuation.definition.string",
+      "scope": "source string",
       "foreground": "var(--syntax-color-string)"
     },
     {
@@ -188,7 +181,8 @@
       "foreground": "var(--syntax-color-type)"
     },
     {
-      "scope": "source punctuation",
+      "name": "punctuation",
+      "scope": "source punctuation - punctuation.definition",
       "foreground": "var(--syntax-color-punctuation)"
     },
     {
