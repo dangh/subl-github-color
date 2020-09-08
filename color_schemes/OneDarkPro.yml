@@ -16,24 +16,24 @@ one-dark-syntax: &one-dark-syntax
   --hue-6-2: hsl(39, 67%, 69%) # <-orange 2
   --syntax-fg: --mono-1
   --syntax-bg: hsl(220, 13%, 18%)
-  --syntax-gutter: color(--syntax-fg lightness(- 26%))
-  --syntax-guide: color(--syntax-fg alpha(- 15%))
+  --syntax-gutter: --syntax-fg lightness(- 26%)
+  --syntax-guide: --syntax-fg alpha(15%)
   --syntax-accent: hsl(220, 100%, 66%)
   # syntax-variables
   --syntax-text-color: --syntax-fg
   --syntax-cursor-color: --syntax-accent
-  --syntax-selection-color: color(--syntax-background-color lightness(+ 10%))
+  --syntax-selection-color: --syntax-background-color lightness(+ 10%)
   --syntax-selection-flash-color: --syntax-accent
   --syntax-background-color: --syntax-bg
   --syntax-wrap-guide-color: --syntax-guide
   --syntax-indent-guide-color: --syntax-guide
   --syntax-invisible-character-color: --syntax-guide
-  --syntax-result-marker-color: color(--syntax-accent alpha(- 24%))
+  --syntax-result-marker-color: --syntax-accent alpha(24%)
   --syntax-result-marker-color-selected: --syntax-accent
   --syntax-gutter-text-color: --syntax-gutter
   --syntax-gutter-text-color-selected: --syntax-fg
   --syntax-gutter-background-color: --syntax-bg
-  --syntax-gutter-background-color-selected: color(--syntax-bg lightness(+ 8%))
+  --syntax-gutter-background-color-selected: --syntax-bg lightness(+ 8%)
   --syntax-color-renamed: hsl(208, 100%, 60%)
   --syntax-color-added: hsl(150, 60%, 54%)
   --syntax-color-modified: hsl(40, 60%, 70%)
@@ -51,7 +51,7 @@ one-dark-syntax: &one-dark-syntax
   --syntax-color-import: --hue-3
   --syntax-color-snippet: --hue-4
   --syntax-cursor-line: hsla(220, 100%,  80%, .04)
-  --syntax-deprecated-fg: color(--syntax-color-modified lightness(- 50%))
+  --syntax-deprecated-fg: --syntax-color-modified lightness(- 50%)
   --syntax-deprecated-bg: --syntax-color-modified
   --syntax-illegal-fg: white
   --syntax-illegal-bg: --syntax-color-removed
@@ -88,7 +88,7 @@ globals:
   foreground: --syntax-text-color
   invisibles: --syntax-invisible-character-color
   caret: --syntax-cursor-color
-  block_caret: color(--syntax-cursor-color alpha(0.5))
+  block_caret: --syntax-cursor-color alpha(0.5)
   line_highlight: --syntax-cursor-line
   # misspelling
   # fold_marker
@@ -99,13 +99,13 @@ globals:
   # popup_css
   # phantom_css
   # sheet_css
-  gutter: color(--syntax-gutter-background-color alpha(0.6))
-  gutter_foreground: color(--syntax-gutter-text-color alpha(0.6))
-  gutter_foreground_highlight: color(--syntax-gutter-text-color alpha(0.6))
+  gutter: --syntax-gutter-background-color alpha(0.6)
+  gutter_foreground: --syntax-gutter-text-color alpha(0.6)
+  gutter_foreground_highlight: --syntax-gutter-text-color alpha(0.6)
   line_diff_width: 2
-  line_diff_added: color(--syntax-color-added alpha(0.6))
-  line_diff_modified: color(--syntax-color-modified alpha(0.6))
-  line_diff_deleted: color(--syntax-color-removed alpha(0.6))
+  line_diff_added: --syntax-color-added alpha(0.6)
+  line_diff_modified: --syntax-color-modified alpha(0.6)
+  line_diff_deleted: --syntax-color-removed alpha(0.6)
   selection: --syntax-selection-color
   # selection_foreground
   # selection_border
@@ -166,7 +166,7 @@ syntax:
   source:
     comment:
       foreground: --syntax-color-comment
-      selection_foreground: color(--syntax-color-comment lightness(+ 15%))
+      selection_foreground: --syntax-color-comment lightness(+ 15%)
     string:
       foreground: --syntax-color-string
     constant:
