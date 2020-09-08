@@ -1,11 +1,13 @@
-name: OneDarkPro
-author: DangH
-
+%YAML 1.2
+---
 one-dark-syntax: &one-dark-syntax
   # colors
-  --mono-1: hsl(220, 14%, 71%)
-  --mono-2: hsl(220, 9%, 55%)
-  --mono-3: hsl(220, 10%, 40%)
+  --syntax-hue: 220
+  --syntax-saturation: 13%
+  --syntax-brightness: 18%
+  --mono-1: hsl(--syntax-hue, 14%, 71%)
+  --mono-2: hsl(--syntax-hue, 9%, 55%)
+  --mono-3: hsl(--syntax-hue, 10%, 40%)
   --hue-1: hsl(187, 47%, 55%) # <-cyan
   --hue-2: hsl(207, 82%, 66%) # <-blue
   --hue-3: hsl(286, 60%, 67%) # <-purple
@@ -15,10 +17,10 @@ one-dark-syntax: &one-dark-syntax
   --hue-6: hsl(29, 54%, 61%) # <-orange 1
   --hue-6-2: hsl(39, 67%, 69%) # <-orange 2
   --syntax-fg: --mono-1
-  --syntax-bg: hsl(220, 13%, 18%)
+  --syntax-bg: hsl(--syntax-hue, --syntax-saturation, --syntax-brightness)
   --syntax-gutter: --syntax-fg lightness(- 26%)
   --syntax-guide: --syntax-fg alpha(15%)
-  --syntax-accent: hsl(220, 100%, 66%)
+  --syntax-accent: hsl(--syntax-hue, 100%, 66%)
   # syntax-variables
   --syntax-text-color: --syntax-fg
   --syntax-cursor-color: --syntax-accent
@@ -50,7 +52,7 @@ one-dark-syntax: &one-dark-syntax
   --syntax-color-attribute: --hue-6
   --syntax-color-import: --hue-3
   --syntax-color-snippet: --hue-4
-  --syntax-cursor-line: hsla(220, 100%,  80%, .04)
+  --syntax-cursor-line: hsla(--syntax-hue, 100%,  80%, .04)
   --syntax-deprecated-fg: --syntax-color-modified lightness(- 50%)
   --syntax-deprecated-bg: --syntax-color-modified
   --syntax-illegal-fg: white
@@ -77,6 +79,7 @@ one-dark-syntax: &one-dark-syntax
 
 variables:
   <<: *one-dark-syntax
+  --gutter-opacity: .6
   #base colors
   #global colors
   #scope colors
@@ -88,7 +91,7 @@ globals:
   foreground: --syntax-text-color
   invisibles: --syntax-invisible-character-color
   caret: --syntax-cursor-color
-  block_caret: --syntax-cursor-color alpha(0.5)
+  block_caret: --syntax-cursor-color alpha(.5)
   line_highlight: --syntax-cursor-line
   # misspelling
   # fold_marker
@@ -99,13 +102,13 @@ globals:
   # popup_css
   # phantom_css
   # sheet_css
-  gutter: --syntax-gutter-background-color alpha(0.6)
-  gutter_foreground: --syntax-gutter-text-color alpha(0.6)
-  gutter_foreground_highlight: --syntax-gutter-text-color alpha(0.6)
+  gutter: --syntax-gutter-background-color alpha(--gutter-opacity)
+  gutter_foreground: --syntax-gutter-text-color alpha(--gutter-opacity)
+  gutter_foreground_highlight: --syntax-gutter-text-color alpha(--gutter-opacity)
   line_diff_width: 2
-  line_diff_added: --syntax-color-added alpha(0.6)
-  line_diff_modified: --syntax-color-modified alpha(0.6)
-  line_diff_deleted: --syntax-color-removed alpha(0.6)
+  line_diff_added: --syntax-color-added alpha(--gutter-opacity)
+  line_diff_modified: --syntax-color-modified alpha(--gutter-opacity)
+  line_diff_deleted: --syntax-color-removed alpha(--gutter-opacity)
   selection: --syntax-selection-color
   # selection_foreground
   # selection_border

@@ -1,6 +1,4 @@
 {
-  "name": "OneDarkPro",
-  "author": "DangH",
   "variables": {
     "--mono-1": "hsl(220, 14%, 71%)",
     "--mono-2": "hsl(220, 9%, 55%)",
@@ -78,7 +76,7 @@
     "foreground": "var(--syntax-text-color)",
     "invisibles": "var(--syntax-invisible-character-color)",
     "caret": "var(--syntax-cursor-color)",
-    "block_caret": "color(var(--syntax-cursor-color) alpha(0.5))",
+    "block_caret": "color(var(--syntax-cursor-color) alpha(.5))",
     "line_highlight": "var(--syntax-cursor-line)",
     "gutter": "color(var(--syntax-gutter-background-color) alpha(0.6))",
     "gutter_foreground": "color(var(--syntax-gutter-text-color) alpha(0.6))",
