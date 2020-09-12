@@ -78,6 +78,7 @@
     "caret": "var(--syntax-cursor-color)",
     "block_caret": "color(var(--syntax-cursor-color) alpha(.5))",
     "line_highlight": "var(--syntax-cursor-line)",
+    "phantom_css": "#jumpy { background-color: hsl(220, 13%, 18%); } #jumpy .label { background-color: hsl(39, 67%, 69%); font-size: 9px; border-radius: 2px; padding-left: 1px; padding-right: 1px; } ",
     "gutter": "color(var(--syntax-gutter-background-color) alpha(0.6))",
     "gutter_foreground": "color(var(--syntax-gutter-text-color) alpha(0.6))",
     "gutter_foreground_highlight": "color(var(--syntax-gutter-text-color) alpha(0.6))",

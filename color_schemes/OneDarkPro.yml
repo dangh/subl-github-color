@@ -100,7 +100,17 @@ globals:
   # scroll_selected_highlight
   # accent
   # popup_css
-  # phantom_css
+  phantom_css: |
+    #jumpy {
+      background-color: --syntax-bg;
+    }
+    #jumpy .label {
+      background-color: --hue-6-2;
+      font-size: 9px;
+      border-radius: 2px;
+      padding-left: 1px;
+      padding-right: 1px;
+    }
   # sheet_css
   gutter: --syntax-gutter-background-color alpha(--gutter-opacity)
   gutter_foreground: --syntax-gutter-text-color alpha(--gutter-opacity)
