@@ -156,6 +156,19 @@
       "foreground": "var(--syntax-markup-list-color)"
     },
     {
+      "scope": "text.find-in-files entity.name.filename",
+      "foreground": "var(--syntax-color-keyword)"
+    },
+    {
+      "scope": "text.find-in-files constant.numeric.line-number",
+      "foreground": "var(--syntax-gutter-text-color)",
+      "background": "var(--syntax-gutter-background-color)"
+    },
+    {
+      "scope": "text.find-in-files constant.numeric.line-number.match",
+      "foreground": "var(--syntax-color-modified)"
+    },
+    {
       "scope": "source comment",
       "foreground": "var(--syntax-color-comment)",
       "selection_foreground": "color(var(--syntax-color-comment) lightness(+ 15%))"
@@ -165,7 +178,8 @@
       "foreground": "var(--syntax-color-string)"
     },
     {
-      "scope": "source constant",
+      "name": "constant",
+      "scope": "source constant, source variable.other.constant",
       "foreground": "var(--syntax-color-constant)"
     },
     {
@@ -192,7 +206,7 @@
     },
     {
       "name": "function",
-      "scope": "source entity.name.function",
+      "scope": "source entity.name.function, source variable.function",
       "foreground": "var(--syntax-color-function)"
     },
     {

@@ -166,6 +166,14 @@ syntax:
       foreground: --syntax-markup-link-description-color
     punctuation.definition.list_item:
       foreground: --syntax-markup-list-color
+  text.find-in-files:
+    entity.name.filename:
+      foreground: --syntax-color-keyword
+    constant.numeric.line-number:
+      foreground: --syntax-gutter-text-color
+      background: --syntax-gutter-background-color
+    constant.numeric.line-number.match:
+      foreground: --syntax-color-modified
   source:
     comment:
       foreground: --syntax-color-comment
@@ -173,6 +181,9 @@ syntax:
     string:
       foreground: --syntax-color-string
     constant:
+      scope:
+        - constant
+        - variable.other.constant
       foreground: --syntax-color-constant
     keyword:
       foreground: --syntax-color-keyword
@@ -194,6 +205,7 @@ syntax:
     function:
       scope:
         - entity.name.function
+        - variable.function
       foreground: --syntax-color-function
     method:
       scope:
