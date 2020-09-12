@@ -1,0 +1,5 @@
+.git* export-ignore
+Pipfile* export-ignore
+Makefile export-ignore
+*.py export-ignore
+*.yml export-ignore

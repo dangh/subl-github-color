@@ -120,7 +120,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "colors",
         nargs="*",
-        default=["../src/GitHub.yml", "../src/OneDarkPro.yml"],
+        default=["GitHub.yml", "OneDarkPro.yml"],
     )
     parser.add_argument(
         "--dev",
@@ -131,7 +131,7 @@ if __name__ == "__main__":
 
     for src in args.colors:
         color_scheme = path.splitext(path.basename(src))[0]
-        dsts = ["../color_schemes/{}.sublime-color-scheme".format(color_scheme)]
+        dsts = ["{}.sublime-color-scheme".format(color_scheme)]
 
         if args.dev:
             dsts += [

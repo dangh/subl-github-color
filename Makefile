@@ -1,11 +1,11 @@
 all: install build
 
-install:; cd build; pipenv install
+install:; pipenv install
 
-dev:; cd build; pipenv run dev
+dev:; pipenv run dev
 
-build:; cd build; pipenv run build
+build:; pipenv run build
 
-clean:; cd build; pipenv run clean
+clean:; pipenv run clean
 
 .PHONY: all build clean

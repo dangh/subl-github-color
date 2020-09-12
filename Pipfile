@@ -13,5 +13,5 @@ python_version = "3.8"
 
 [scripts]
 build = "bash -c 'echo Generating color schemes... && python build.py --dev'"
-dev = "bash -c 'pipenv run build && echo Watching files for changes... && fswatch color_schemes/*.yml | xargs -I{} python build.py --dev {}'"
+dev = "bash -c 'pipenv run build && echo Watching files for changes... && fswatch *.yml | xargs -I{} python build.py --dev {}'"
 clean = "bash -c 'echo Clean dev color schemes... && rm ~/Library/\"Application Support\"/\"Sublime Text\"/Packages/User/{GitHub,OneDarkPro}-dev.sublime-color-scheme'"
