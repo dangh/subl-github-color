@@ -6,7 +6,8 @@ import os
 from os import path
 from pathlib import Path
 
-VAR_REGEX = r'--[^\s,)]+'
+VAR_REGEX = r'--[^\s,);]+'
+FORCE_EMBED_VARS = r'_css$'
 
 def is_color(value):
 	if re.match(r'aliceblue|antiquewhite|aqua|aquamarine|azure|beige|bisque|black|blanchedalmond|blue|blueviolet|brown|burlywood|cadetblue|chartreuse|chocolate|coral|cornflowerblue|cornsilk|crimson|cyan|darkblue|darkcyan|darkgoldenrod|darkgray|darkgreen|darkgrey|darkkhaki|darkmagenta|darkolivegreen|darkorange|darkorchid|darkred|darksalmon|darkseagreen|darkslateblue|darkslategray|darkslategrey|darkturquoise|darkviolet|deeppink|deepskyblue|dimgray|dimgrey|dodgerblue|firebrick|floralwhite|forestgreen|fuchsia|gainsboro|ghostwhite|gold|goldenrod|gray|green|greenyellow|grey|honeydew|hotpink|indianred|indigo|ivory|khaki|lavender|lavenderblush|lawngreen|lemonchiffon|lightblue|lightcoral|lightcyan|lightgoldenrodyellow|lightgray|lightgreen|lightgrey|lightpink|lightsalmon|lightseagreen|lightskyblue|lightslategray|lightslategrey|lightsteelblue|lightyellow|lime|limegreen|linen|magenta|maroon|mediumaquamarine|mediumblue|mediumorchid|mediumpurple|mediumseagreen|mediumslateblue|mediumspringgreen|mediumturquoise|mediumvioletred|midnightblue|mintcream|mistyrose|moccasin|navajowhite|navy|oldlace|olive|olivedrab|orange|orangered|orchid|palegoldenrod|palegreen|paleturquoise|palevioletred|papayawhip|peachpuff|peru|pink|plum|powderblue|purple|rebeccapurple|red|rosybrown|royalblue|saddlebrown|salmon|sandybrown|seagreen|seashell|sienna|silver|skyblue|slateblue|slategray|slategrey|snow|springgreen|steelblue|tan|teal|thistle|tomato|turquoise|violet|wheat|white|whitesmoke|yellow|yellowgreen', value):
@@ -24,27 +25,29 @@ def build(data):
 	globals_ = dict()
 	rules = list()
 
-	def embed_var(value):
+	def embed_var(name, value):
 		def embed(match):
+			nonlocal name
 			nonlocal variables
 			var = match.group()
+			force_embed = re.search(FORCE_EMBED_VARS, name)
 			if var not in variable_types:
 				raise Exception('{} is not defined'.format(var))
-			if variable_types[var] == 'embed':
+			if variable_types[var] == 'embed' or force_embed:
 				return variables[var_name(var)]
 			return var
 		return re.sub(VAR_REGEX, embed, value)
 
-	def ref_var(value):
-		def ref(match):
+	def refer_var(value):
+		def refer(match):
 			nonlocal variables
 			var = match.group()
 			if var not in variable_types:
 				raise Exception('{} is not defined'.format(var))
 			return 'var({})'.format(var_name(var))
-		return re.sub(VAR_REGEX, ref, value)
+		return re.sub(VAR_REGEX, refer, value)
 
-	def adjust_color(value):
+	def wrap_in_color_func(value):
 		if re.search(r'\b(blenda?|a(lpha)?|s(aturation)?|l(ightness)?|min-contrast)\(', value):
 			return 'color({})'.format(value)
 		return value
@@ -61,11 +64,13 @@ def build(data):
 				variable_types[name] = 'embed'
 			variables[var_name(name)] = value
 		for name, value in variables.items():
-			variables[name] = adjust_color(ref_var(embed_var(value)))
+			variables[name] = wrap_in_color_func(refer_var(embed_var(name, value)))
 	if 'globals' in data:
 		for name, value in data['globals'].items():
 			value = str(value)
-			globals_[name] = adjust_color(ref_var(embed_var(value)))
+			if name in ['popup_css', 'phantom_css', 'sheet_css']:
+				value = re.sub(r'\s+', ' ', value)
+			globals_[name] = wrap_in_color_func(refer_var(embed_var(name, value)))
 	if 'syntax' in data:
 		for base_scopes, styles in data['syntax'].items():
 			base_scopes = base_scopes.split(r'\s*,\s*')
@@ -87,7 +92,7 @@ def build(data):
 				combined_scope = ', '.join(combined_scope)
 				rule['scope'] = combined_scope
 				for name, value in style.items():
-					rule[name] = adjust_color(ref_var(embed_var(value)))
+					rule[name] = wrap_in_color_func(refer_var(embed_var(name, value)))
 				rules += [rule]
 	return dict(
 		variables={ var_name(key): variables[var_name(key)] for key, value in variable_types.items() if value != 'embed' },
