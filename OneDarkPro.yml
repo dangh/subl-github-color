@@ -303,3 +303,6 @@ syntax:
       scope:
         - keyword.operator
       foreground: --syntax-color-keyword
+  source.shell:
+    variable:
+      foreground: --syntax-color-variable

@@ -306,6 +306,10 @@
       "name": "operator",
       "scope": "source.python keyword.operator",
       "foreground": "var(--syntax-color-keyword)"
+    },
+    {
+      "scope": "source.shell variable",
+      "foreground": "var(--syntax-color-variable)"
     }
   ]
 }
