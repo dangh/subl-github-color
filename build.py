@@ -111,7 +111,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "colors",
         nargs="*",
-        default=["GitHub.yml", "OneDarkPro.yml"],
+        default=["GitHub.yml", "OneDark.yml"],
     )
     parser.add_argument(
         "--dev",

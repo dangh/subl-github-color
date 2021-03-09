@@ -14,6 +14,6 @@ build:
 
 clean:
 	@echo Clean dev color schemes...
-	rm ~/Library/Application\ Support/Sublime\ Text/Packages/User/{GitHub,OneDarkPro}-dev.sublime-color-scheme
+	rm ~/Library/Application\ Support/Sublime\ Text/Packages/User/{GitHub,OneDark}-dev.sublime-color-scheme
 
 .PHONY: all build clean
