@@ -1,11 +1,19 @@
 all: install build
 
-install:; pipenv install
+install:
+	python3 -m pip install -r requirements.txt --user
 
-dev:; pipenv run dev
+dev:
+	make build
+	@echo Watching files for changes...
+	fswatch *.yml | xargs -I{} python3 build.py --dev {}
 
-build:; pipenv run build
+build:
+	@echo Generating color schemes...
+	python3 build.py --dev
 
-clean:; pipenv run clean
+clean:
+	@echo Clean dev color schemes...
+	rm ~/Library/Application\ Support/Sublime\ Text/Packages/User/{GitHub,OneDarkPro}-dev.sublime-color-scheme
 
 .PHONY: all build clean
