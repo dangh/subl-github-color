@@ -33,8 +33,6 @@ def build(data):
 
     def embed_var(name, value):
         def embed(match):
-            nonlocal name
-            nonlocal variables
             var = match.group()
             force_embed = re.search(FORCE_EMBED_VARS, name)
             if var not in variable_types:
@@ -47,7 +45,6 @@ def build(data):
 
     def refer_var(value):
         def refer(match):
-            nonlocal variables
             var = match.group()
             if var not in variable_types:
                 raise Exception("{} is not defined".format(var))
@@ -56,9 +53,7 @@ def build(data):
         return re.sub(VAR_REGEX, refer, value)
 
     def wrap_in_color_func(value):
-        if re.search(
-            r"\b(blenda?|a(lpha)?|s(aturation)?|l(ightness)?|min-contrast)\(", value
-        ):
+        if re.search(r"\b(blenda?|a(lpha)?|s(aturation)?|l(ightness)?|min-contrast)\(", value):
             return "color({})".format(value)
         return value
 
@@ -105,11 +100,7 @@ def build(data):
                     rule[name] = wrap_in_color_func(refer_var(embed_var(name, value)))
                 rules += [rule]
     return dict(
-        variables={
-            var_name(key): variables[var_name(key)]
-            for key, value in variable_types.items()
-            if value != "embed"
-        },
+        variables={var_name(key): variables[var_name(key)] for key, value in variable_types.items() if value != "embed"},
         globals=globals_,
         rules=rules,
     )
@@ -134,11 +125,7 @@ if __name__ == "__main__":
         dsts = ["{}.sublime-color-scheme".format(color_scheme)]
 
         if args.dev:
-            dsts += [
-                "{}/Library/Application Support/Sublime Text/Packages/User/{}-dev.sublime-color-scheme".format(
-                    Path.home(), color_scheme
-                )
-            ]
+            dsts += ["{}/Library/Application Support/Sublime Text/Packages/User/{}-dev.sublime-color-scheme".format(Path.home(), color_scheme)]
 
         with open(src) as infile:
             data = yaml.load(infile, Loader=yaml.FullLoader)

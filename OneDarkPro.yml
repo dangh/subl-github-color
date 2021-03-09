@@ -138,7 +138,7 @@ globals:
   brackets_foreground: --syntax-selection-flash-color
   # bracket_contents_options
   # bracket_contents_foreground
-  tags_options: underline foreground
+  tags_options: underline
   tags_foreground: --syntax-selection-flash-color
   shadow: ''
   shadow_width: 0
@@ -158,6 +158,9 @@ syntax:
       foreground: --syntax-color-modified
     markup.inserted:
       foreground: --syntax-color-added
+    comment:
+      foreground: --syntax-color-comment
+      selection_foreground: --syntax-color-comment lightness(+ 15%)
   text:
     markup.underline:
       foreground: --syntax-markup-link-color
@@ -184,10 +187,22 @@ syntax:
       background: --syntax-gutter-background-color
     constant.numeric.line-number.match:
       foreground: --syntax-color-modified
+  text:
+    tag:
+      scope:
+        - entity.name.tag
+      foreground: --syntax-color-tag
+    attribute:
+      scope:
+        - entity.other.attribute-name
+        - punctuation.definition.attribute
+      foreground: --syntax-color-attribute
+    string:
+      scope:
+        - string
+        - punctuation.definition.string
+      foreground: --syntax-color-string
   source:
-    comment:
-      foreground: --syntax-color-comment
-      selection_foreground: --syntax-color-comment lightness(+ 15%)
     string:
       foreground: --syntax-color-string
     constant:
@@ -271,6 +286,15 @@ syntax:
       scope:
         - variable.parameter
       foreground: --syntax-fg
+    property:
+      scope:
+        - variable.other.readwrite.property - entity - meta.function-call - meta.invocation
+        - entity.other.property-binding
+      foreground: --syntax-color-variable
+    function-call:
+      scope:
+        - variable.other.readwrite meta.function-call
+      foreground: --syntax-color-function
   source.es:
     USER_CONTANTS:
       scope:
@@ -284,7 +308,9 @@ syntax:
       scope:
         - variable.other.readwrite.initCap
       foreground: --syntax-color-class
-    variable.other.readwrite.property:
+    variables:
+      scope:
+        - variable.other.readwrite.property - entity
       foreground: --syntax-color-variable
     function-call:
       scope:

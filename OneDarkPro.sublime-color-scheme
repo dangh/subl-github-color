@@ -97,7 +97,7 @@
     "guide": "var(--syntax-indent-guide-color)",
     "brackets_options": "underline",
     "brackets_foreground": "var(--syntax-selection-flash-color)",
-    "tags_options": "underline foreground",
+    "tags_options": "underline",
     "tags_foreground": "var(--syntax-selection-flash-color)",
     "shadow": "",
     "shadow_width": "0"
@@ -129,35 +129,24 @@
       "foreground": "var(--syntax-color-added)"
     },
     {
-      "scope": "text markup.underline",
-      "foreground": "var(--syntax-markup-link-color)",
-      "font_style": "underline"
+      "scope": "comment",
+      "foreground": "var(--syntax-color-comment)",
+      "selection_foreground": "color(var(--syntax-color-comment) lightness(+ 15%))"
     },
     {
-      "scope": "text markup.heading",
-      "foreground": "var(--syntax-markup-heading-color)"
+      "name": "tag",
+      "scope": "text entity.name.tag",
+      "foreground": "var(--syntax-color-tag)"
     },
     {
-      "scope": "text markup.bold",
-      "foreground": "var(--syntax-markup-bold-color)",
-      "font_style": "bold"
+      "name": "attribute",
+      "scope": "text entity.other.attribute-name, text punctuation.definition.attribute",
+      "foreground": "var(--syntax-color-attribute)"
     },
     {
-      "scope": "text markup.italic",
-      "foreground": "var(--syntax-markup-italic-color)",
-      "font_style": "italic"
-    },
-    {
-      "scope": "text markup.raw",
-      "foreground": "var(--syntax-markup-raw-color)"
-    },
-    {
-      "scope": "text meta.link.inline.description",
-      "foreground": "var(--syntax-markup-link-description-color)"
-    },
-    {
-      "scope": "text punctuation.definition.list_item",
-      "foreground": "var(--syntax-markup-list-color)"
+      "name": "string",
+      "scope": "text string, text punctuation.definition.string",
+      "foreground": "var(--syntax-color-string)"
     },
     {
       "scope": "text.find-in-files entity.name.filename",
@@ -171,11 +160,6 @@
     {
       "scope": "text.find-in-files constant.numeric.line-number.match",
       "foreground": "var(--syntax-color-modified)"
-    },
-    {
-      "scope": "source comment",
-      "foreground": "var(--syntax-color-comment)",
-      "selection_foreground": "color(var(--syntax-color-comment) lightness(+ 15%))"
     },
     {
       "scope": "source string",
@@ -274,6 +258,16 @@
       "foreground": "var(--syntax-fg)"
     },
     {
+      "name": "property",
+      "scope": "source.js variable.other.readwrite.property - entity - meta.function-call - meta.invocation, source.js entity.other.property-binding",
+      "foreground": "var(--syntax-color-variable)"
+    },
+    {
+      "name": "function-call",
+      "scope": "source.js variable.other.readwrite meta.function-call",
+      "foreground": "var(--syntax-color-function)"
+    },
+    {
       "name": "USER_CONTANTS",
       "scope": "source.es variable.other.readwrite.allCap, source.es variable.other.readwrite.import.allCap, source.es variable.other.readwrite.export.allCap, source.es variable.other.readwrite.property.allCap, source.es variable.other.readwrite.property.object-literal.allCap",
       "foreground": "var(--syntax-color-constant)"
@@ -284,7 +278,8 @@
       "foreground": "var(--syntax-color-class)"
     },
     {
-      "scope": "source.es variable.other.readwrite.property",
+      "name": "variables",
+      "scope": "source.es variable.other.readwrite.property - entity",
       "foreground": "var(--syntax-color-variable)"
     },
     {
