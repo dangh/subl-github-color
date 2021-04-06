@@ -254,6 +254,7 @@ syntax:
       scope:
         - support.function
         - support.variable
+        - variable.language
       foreground: --syntax-color-support
     regexp:
       scope:

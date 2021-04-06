@@ -219,7 +219,7 @@
     },
     {
       "name": "support",
-      "scope": "source support.function, source support.variable",
+      "scope": "source support.function, source support.variable, source variable.language",
       "foreground": "var(--syntax-color-support)"
     },
     {
