@@ -75,7 +75,7 @@ one-dark-syntax: &one-dark-syntax
   --syntax-markup-link-color: --hue-1
   --syntax-markup-link-description-color: --hue-2
   --syntax-markup-raw-color: --hue-4
-  --syntax-markup-list-color: --hue-3
+  --syntax-markup-list-color: --hue-5
 
 variables:
   <<: *one-dark-syntax
@@ -161,20 +161,24 @@ syntax:
     comment:
       foreground: --syntax-color-comment
       selection_foreground: --syntax-color-comment lightness(+ 15%)
-  text:
-    markup.underline:
-      foreground: --syntax-markup-link-color
-      font_style: underline
+      font_style: italic
+  text.html.markdown:
     markup.heading:
       foreground: --syntax-markup-heading-color
     markup.bold:
-      foreground: --syntax-markup-bold-color
       font_style: bold
+    markup.bold - punctuation.definition.bold:
+      foreground: --syntax-markup-bold-color
     markup.italic:
-      foreground: --syntax-markup-italic-color
       font_style: italic
+    markup.italic - punctuation.definition.italic:
+      foreground: --syntax-markup-italic-color
     markup.raw:
       foreground: --syntax-markup-raw-color
+    meta.link.inline:
+      foreground: --syntax-fg
+    meta.link.inline markup.underline:
+      foreground: --syntax-markup-link-color
     meta.link.inline.description:
       foreground: --syntax-markup-link-description-color
     punctuation.definition.list_item:
@@ -215,7 +219,7 @@ syntax:
     storage:
       foreground: --syntax-color-storage
     storage.type.accessor:
-      foreground: --syntax-color-type
+      foreground: --syntax-color-storage
     punctuation:
       scope:
         - punctuation - punctuation.definition
@@ -291,6 +295,7 @@ syntax:
       scope:
         - variable.other.readwrite.property - entity - meta.function-call - meta.invocation
         - entity.other.property-binding
+        - source meta.object-literal.key - meta.binding.name
       foreground: --syntax-color-variable
     function-call:
       scope:

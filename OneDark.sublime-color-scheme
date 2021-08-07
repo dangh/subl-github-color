@@ -68,7 +68,7 @@
     "--syntax-markup-link-color": "var(--hue-1)",
     "--syntax-markup-link-description-color": "var(--hue-2)",
     "--syntax-markup-raw-color": "var(--hue-4)",
-    "--syntax-markup-list-color": "var(--hue-3)",
+    "--syntax-markup-list-color": "var(--hue-5)",
     "--syntax-color-parameter": "var(--hue-6)"
   },
   "globals": {
@@ -131,7 +131,61 @@
     {
       "scope": "comment",
       "foreground": "var(--syntax-color-comment)",
-      "selection_foreground": "color(var(--syntax-color-comment) lightness(+ 15%))"
+      "selection_foreground": "color(var(--syntax-color-comment) lightness(+ 15%))",
+      "font_style": "italic"
+    },
+    {
+      "scope": "text.html.markdown markup.heading",
+      "foreground": "var(--syntax-markup-heading-color)"
+    },
+    {
+      "scope": "text.html.markdown markup.bold",
+      "font_style": "bold"
+    },
+    {
+      "scope": "text.html.markdown markup.bold - punctuation.definition.bold",
+      "foreground": "var(--syntax-markup-bold-color)"
+    },
+    {
+      "scope": "text.html.markdown markup.italic",
+      "font_style": "italic"
+    },
+    {
+      "scope": "text.html.markdown markup.italic - punctuation.definition.italic",
+      "foreground": "var(--syntax-markup-italic-color)"
+    },
+    {
+      "scope": "text.html.markdown markup.raw",
+      "foreground": "var(--syntax-markup-raw-color)"
+    },
+    {
+      "scope": "text.html.markdown meta.link.inline",
+      "foreground": "var(--syntax-fg)"
+    },
+    {
+      "scope": "text.html.markdown meta.link.inline markup.underline",
+      "foreground": "var(--syntax-markup-link-color)"
+    },
+    {
+      "scope": "text.html.markdown meta.link.inline.description",
+      "foreground": "var(--syntax-markup-link-description-color)"
+    },
+    {
+      "scope": "text.html.markdown punctuation.definition.list_item",
+      "foreground": "var(--syntax-markup-list-color)"
+    },
+    {
+      "scope": "text.find-in-files entity.name.filename",
+      "foreground": "var(--syntax-color-keyword)"
+    },
+    {
+      "scope": "text.find-in-files constant.numeric.line-number",
+      "foreground": "var(--syntax-gutter-text-color)",
+      "background": "var(--syntax-gutter-background-color)"
+    },
+    {
+      "scope": "text.find-in-files constant.numeric.line-number.match",
+      "foreground": "var(--syntax-color-modified)"
     },
     {
       "name": "tag",
@@ -147,19 +201,6 @@
       "name": "string",
       "scope": "text string, text punctuation.definition.string",
       "foreground": "var(--syntax-color-string)"
-    },
-    {
-      "scope": "text.find-in-files entity.name.filename",
-      "foreground": "var(--syntax-color-keyword)"
-    },
-    {
-      "scope": "text.find-in-files constant.numeric.line-number",
-      "foreground": "var(--syntax-gutter-text-color)",
-      "background": "var(--syntax-gutter-background-color)"
-    },
-    {
-      "scope": "text.find-in-files constant.numeric.line-number.match",
-      "foreground": "var(--syntax-color-modified)"
     },
     {
       "scope": "source string",
@@ -180,7 +221,7 @@
     },
     {
       "scope": "source storage.type.accessor",
-      "foreground": "var(--syntax-color-type)"
+      "foreground": "var(--syntax-color-storage)"
     },
     {
       "name": "punctuation",
@@ -259,7 +300,7 @@
     },
     {
       "name": "property",
-      "scope": "source.js variable.other.readwrite.property - entity - meta.function-call - meta.invocation, source.js entity.other.property-binding",
+      "scope": "source.js variable.other.readwrite.property - entity - meta.function-call - meta.invocation, source.js entity.other.property-binding, source.js source meta.object-literal.key - meta.binding.name",
       "foreground": "var(--syntax-color-variable)"
     },
     {
