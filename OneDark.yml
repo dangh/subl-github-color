@@ -69,13 +69,13 @@ one-dark-syntax: &one-dark-syntax
   --syntax-color-operator: --hue-1
   --syntax-color-language: --hue-1
   --syntax-color-support: --hue-1
-  --syntax-markup-bold-color: --hue-6
-  --syntax-markup-italic-color: --hue-3
-  --syntax-markup-heading-color: --hue-5
-  --syntax-markup-link-color: --hue-1
-  --syntax-markup-link-description-color: --hue-2
-  --syntax-markup-raw-color: --hue-4
-  --syntax-markup-list-color: --hue-5
+  --syntax-color-markup-bold: --hue-6
+  --syntax-color-markup-italic: --hue-3
+  --syntax-color-markup-heading: --hue-5
+  --syntax-color-markup-link: --hue-1
+  --syntax-color-markup-link-description: --hue-2
+  --syntax-color-markup-raw: --hue-4
+  --syntax-color-markup-list: --hue-5
 
 variables:
   <<: *one-dark-syntax
@@ -164,25 +164,25 @@ syntax:
       font_style: italic
   text.html.markdown:
     markup.heading:
-      foreground: --syntax-markup-heading-color
+      foreground: --syntax-color-markup-heading
     markup.bold:
       font_style: bold
     markup.bold - punctuation.definition.bold:
-      foreground: --syntax-markup-bold-color
+      foreground: --syntax-color-markup-bold
     markup.italic:
       font_style: italic
     markup.italic - punctuation.definition.italic:
-      foreground: --syntax-markup-italic-color
+      foreground: --syntax-color-markup-italic
     markup.raw:
-      foreground: --syntax-markup-raw-color
+      foreground: --syntax-color-markup-raw
     meta.link.inline:
       foreground: --syntax-fg
     meta.link.inline markup.underline:
-      foreground: --syntax-markup-link-color
+      foreground: --syntax-color-markup-link
     meta.link.inline.description:
-      foreground: --syntax-markup-link-description-color
+      foreground: --syntax-color-markup-link-description
     punctuation.definition.list_item:
-      foreground: --syntax-markup-list-color
+      foreground: --syntax-color-markup-list
   text.find-in-files:
     entity.name.filename:
       foreground: --syntax-color-keyword

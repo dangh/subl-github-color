@@ -62,13 +62,13 @@
     "--syntax-color-operator": "var(--hue-1)",
     "--syntax-color-language": "var(--hue-1)",
     "--syntax-color-support": "var(--hue-1)",
-    "--syntax-markup-bold-color": "var(--hue-6)",
-    "--syntax-markup-italic-color": "var(--hue-3)",
-    "--syntax-markup-heading-color": "var(--hue-5)",
-    "--syntax-markup-link-color": "var(--hue-1)",
-    "--syntax-markup-link-description-color": "var(--hue-2)",
-    "--syntax-markup-raw-color": "var(--hue-4)",
-    "--syntax-markup-list-color": "var(--hue-5)",
+    "--syntax-color-markup-bold": "var(--hue-6)",
+    "--syntax-color-markup-italic": "var(--hue-3)",
+    "--syntax-color-markup-heading": "var(--hue-5)",
+    "--syntax-color-markup-link": "var(--hue-1)",
+    "--syntax-color-markup-link-description": "var(--hue-2)",
+    "--syntax-color-markup-raw": "var(--hue-4)",
+    "--syntax-color-markup-list": "var(--hue-5)",
     "--syntax-color-parameter": "var(--hue-6)"
   },
   "globals": {
@@ -136,7 +136,7 @@
     },
     {
       "scope": "text.html.markdown markup.heading",
-      "foreground": "var(--syntax-markup-heading-color)"
+      "foreground": "var(--syntax-color-markup-heading)"
     },
     {
       "scope": "text.html.markdown markup.bold",
@@ -144,7 +144,7 @@
     },
     {
       "scope": "text.html.markdown markup.bold - punctuation.definition.bold",
-      "foreground": "var(--syntax-markup-bold-color)"
+      "foreground": "var(--syntax-color-markup-bold)"
     },
     {
       "scope": "text.html.markdown markup.italic",
@@ -152,11 +152,11 @@
     },
     {
       "scope": "text.html.markdown markup.italic - punctuation.definition.italic",
-      "foreground": "var(--syntax-markup-italic-color)"
+      "foreground": "var(--syntax-color-markup-italic)"
     },
     {
       "scope": "text.html.markdown markup.raw",
-      "foreground": "var(--syntax-markup-raw-color)"
+      "foreground": "var(--syntax-color-markup-raw)"
     },
     {
       "scope": "text.html.markdown meta.link.inline",
@@ -164,15 +164,15 @@
     },
     {
       "scope": "text.html.markdown meta.link.inline markup.underline",
-      "foreground": "var(--syntax-markup-link-color)"
+      "foreground": "var(--syntax-color-markup-link)"
     },
     {
       "scope": "text.html.markdown meta.link.inline.description",
-      "foreground": "var(--syntax-markup-link-description-color)"
+      "foreground": "var(--syntax-color-markup-link-description)"
     },
     {
       "scope": "text.html.markdown punctuation.definition.list_item",
-      "foreground": "var(--syntax-markup-list-color)"
+      "foreground": "var(--syntax-color-markup-list)"
     },
     {
       "scope": "text.find-in-files entity.name.filename",
