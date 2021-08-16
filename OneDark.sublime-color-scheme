@@ -255,7 +255,7 @@
     },
     {
       "name": "property",
-      "scope": "source meta.property.object, source meta.mapping.key",
+      "scope": "source meta.property.object, source meta.mapping.key, source meta.object-literal.key",
       "foreground": "var(--syntax-color-variable)"
     },
     {

@@ -253,6 +253,7 @@ syntax:
       scope:
         - meta.property.object
         - meta.mapping.key
+        - meta.object-literal.key
       foreground: --syntax-color-variable
     operator:
       scope:
