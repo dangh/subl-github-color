@@ -231,6 +231,10 @@ syntax:
         - support.class
         - support.constant.builtin
       foreground: --syntax-color-class
+    constructor:
+      scope:
+        - variable.type
+      foreground: --syntax-color-class
     function:
       scope:
         - entity.name.function

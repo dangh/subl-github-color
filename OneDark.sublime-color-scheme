@@ -234,6 +234,11 @@
       "foreground": "var(--syntax-color-class)"
     },
     {
+      "name": "constructor",
+      "scope": "source variable.type",
+      "foreground": "var(--syntax-color-class)"
+    },
+    {
       "name": "function",
       "scope": "source entity.name.function, source variable.function",
       "foreground": "var(--syntax-color-function)"
