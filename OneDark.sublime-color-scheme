@@ -59,7 +59,7 @@
     "--syntax-color-regexp": "var(--hue-1)",
     "--syntax-color-symbol": "var(--hue-1)",
     "--syntax-color-escape": "var(--hue-1)",
-    "--syntax-color-operator": "var(--hue-1)",
+    "--syntax-color-operator": "var(--hue-3)",
     "--syntax-color-language": "var(--hue-1)",
     "--syntax-color-support": "var(--hue-1)",
     "--syntax-color-markup-bold": "var(--hue-6)",

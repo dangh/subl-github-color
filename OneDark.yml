@@ -66,7 +66,7 @@ one-dark-syntax: &one-dark-syntax
   --syntax-color-regexp: --hue-1
   --syntax-color-symbol: --hue-1
   --syntax-color-escape: --hue-1
-  --syntax-color-operator: --hue-1
+  --syntax-color-operator: --hue-3
   --syntax-color-language: --hue-1
   --syntax-color-support: --hue-1
   --syntax-color-markup-bold: --hue-6
