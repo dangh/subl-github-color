@@ -240,7 +240,7 @@
     },
     {
       "name": "function",
-      "scope": "source entity.name.function, source variable.function",
+      "scope": "source entity.name.function, source variable.function, source support.function",
       "foreground": "var(--syntax-color-function)"
     },
     {
@@ -265,7 +265,7 @@
     },
     {
       "name": "support",
-      "scope": "source support.function, source support.variable, source variable.language",
+      "scope": "source support.variable, source variable.language",
       "foreground": "var(--syntax-color-support)"
     },
     {

@@ -239,6 +239,7 @@ syntax:
       scope:
         - entity.name.function
         - variable.function
+        - support.function
       foreground: --syntax-color-function
     method:
       scope:
@@ -260,7 +261,6 @@ syntax:
       foreground: --syntax-color-operator
     support:
       scope:
-        - support.function
         - support.variable
         - variable.language
       foreground: --syntax-color-support
