@@ -265,6 +265,8 @@ syntax:
         - support.variable
         - variable.language
       foreground: --syntax-color-support
+    support.constant:
+      foreground: --syntax-color-variable
     regexp:
       scope:
         - source.regexp

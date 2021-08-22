@@ -269,6 +269,10 @@
       "foreground": "var(--syntax-color-support)"
     },
     {
+      "scope": "source support.constant",
+      "foreground": "var(--syntax-color-variable)"
+    },
+    {
       "name": "regexp",
       "scope": "source source.regexp",
       "foreground": "var(--syntax-color-regexp)"
