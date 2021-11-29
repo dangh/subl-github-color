@@ -140,6 +140,14 @@ syntax:
     markup.inserted:
       foreground: --diff_inserted.fg
       background: --diff_inserted.bg
+    entity.name.filename.find-in-files:
+      foreground: --red.fg
+      background: --red.bg
+    constant.numeric.line-number.find-in-files:
+      foreground: hsl(0, 0%, 72%)
+    constant.numeric.line-number.match.find-in-files:
+      foreground: --blue.fg
+      background: --blue.bg
   source:
     comment:
       foreground: --gray.fg
@@ -181,6 +189,14 @@ syntax:
   text:
     markup.underline:
       font_style: underline
+    entity.name.tag:
+      foreground: --green.fg
+      background: --green.bg
+    attribute:
+      scope:
+        - entity.other.attribute-name
+        - punctuation.definition.attribute
+      foreground: --red.fg
   source.js:
     meta.mapping.key:
       foreground: --label.fg

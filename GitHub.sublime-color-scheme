@@ -155,6 +155,20 @@
       "background": "var(--diff_inserted-bg)"
     },
     {
+      "scope": "entity.name.filename.find-in-files",
+      "foreground": "var(--red-fg)",
+      "background": "var(--red-bg)"
+    },
+    {
+      "scope": "constant.numeric.line-number.find-in-files",
+      "foreground": "hsl(0, 0%, 72%)"
+    },
+    {
+      "scope": "constant.numeric.line-number.match.find-in-files",
+      "foreground": "var(--blue-fg)",
+      "background": "var(--blue-bg)"
+    },
+    {
       "scope": "source comment",
       "foreground": "var(--gray-fg)"
     },
@@ -219,6 +233,16 @@
     {
       "scope": "text markup.underline",
       "font_style": "underline"
+    },
+    {
+      "scope": "text entity.name.tag",
+      "foreground": "var(--green-fg)",
+      "background": "var(--green-bg)"
+    },
+    {
+      "name": "attribute",
+      "scope": "text entity.other.attribute-name, text punctuation.definition.attribute",
+      "foreground": "var(--red-fg)"
     },
     {
       "scope": "source.js meta.mapping.key",
