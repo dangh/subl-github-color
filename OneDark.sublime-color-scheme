@@ -129,6 +129,22 @@
       "foreground": "var(--syntax-color-added)"
     },
     {
+      "scope": "region.greenish",
+      "foreground": "var(--syntax-color-added)"
+    },
+    {
+      "scope": "region.redish",
+      "foreground": "var(--syntax-color-removed)"
+    },
+    {
+      "scope": "region.yellowish",
+      "foreground": "var(--syntax-color-modified)"
+    },
+    {
+      "scope": "region.blueish",
+      "foreground": "var(--syntax-color-renamed)"
+    },
+    {
       "scope": "comment",
       "foreground": "var(--syntax-color-comment)",
       "selection_foreground": "color(var(--syntax-color-comment) lightness(+ 15%))",

@@ -158,6 +158,14 @@ syntax:
       foreground: --syntax-color-modified
     markup.inserted:
       foreground: --syntax-color-added
+    region.greenish:
+      foreground: --syntax-color-added
+    region.redish:
+      foreground: --syntax-color-removed
+    region.yellowish:
+      foreground: --syntax-color-modified
+    region.blueish:
+      foreground: --syntax-color-renamed
     comment:
       foreground: --syntax-color-comment
       selection_foreground: --syntax-color-comment lightness(+ 15%)
