@@ -290,7 +290,7 @@
     },
     {
       "name": "regexp",
-      "scope": "source source.regexp",
+      "scope": "source string.regexp",
       "foreground": "var(--syntax-color-regexp)"
     },
     {
@@ -302,6 +302,16 @@
       "name": "parameter",
       "scope": "source variable.parameter",
       "foreground": "var(--syntax-color-parameter)"
+    },
+    {
+      "name": "regexp literal",
+      "scope": "source string.regexp - punctuation - entity - variable - constant - keyword, source constant.other.character-class.set.regexp - punctuation",
+      "foreground": "var(--syntax-color-string)"
+    },
+    {
+      "name": "regexp group",
+      "scope": "source entity.name.other.group.regexp, source variable.other.group.regexp",
+      "font_style": "bold"
     },
     {
       "name": "key",

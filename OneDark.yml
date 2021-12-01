@@ -287,6 +287,19 @@ syntax:
       scope:
         - variable.parameter
       foreground: --syntax-color-parameter
+    regexp:
+      scope: string.regexp
+      foreground: --syntax-color-regexp
+    regexp literal:
+      scope:
+        - string.regexp - punctuation - entity - variable - constant - keyword
+        - constant.other.character-class.set.regexp - punctuation
+      foreground: --syntax-color-string
+    regexp group:
+      scope:
+        - entity.name.other.group.regexp
+        - variable.other.group.regexp
+      font_style: bold
   source.json:
     key:
       scope:
