@@ -169,7 +169,7 @@
       "background": "var(--blue-bg)"
     },
     {
-      "scope": "source comment",
+      "scope": "comment",
       "foreground": "var(--gray-fg)"
     },
     {

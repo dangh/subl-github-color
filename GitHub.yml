@@ -148,9 +148,9 @@ syntax:
     constant.numeric.line-number.match.find-in-files:
       foreground: --blue.fg
       background: --blue.bg
-  source:
     comment:
       foreground: --gray.fg
+  source:
     string:
       foreground: --string.fg
     string.quoted:
