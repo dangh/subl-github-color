@@ -231,6 +231,17 @@
       "foreground": "var(--storage-fg)"
     },
     {
+      "name": "regexp literal",
+      "scope": "source string.regexp - punctuation - entity - variable - constant - keyword, source constant.other.character-class.set.regexp - punctuation - keyword, source constant.character.escape.backslash.regexp",
+      "foreground": "var(--string-fg)",
+      "background": "var(--string-bg)"
+    },
+    {
+      "name": "regexp escape",
+      "scope": "source constant.character.escape.backslash.regexp",
+      "foreground": "color(var(--string-fg) blend(var(--string-bg) 30%))"
+    },
+    {
       "scope": "text markup.underline",
       "font_style": "underline"
     },
