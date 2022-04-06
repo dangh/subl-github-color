@@ -271,7 +271,7 @@
     },
     {
       "name": "property",
-      "scope": "source meta.property.object, source meta.mapping.key, source meta.object-literal.key - meta.binding.name",
+      "scope": "source meta.property.object, source meta.mapping.key string - punctuation, source meta.object-literal.key - meta.binding.name",
       "foreground": "var(--syntax-color-variable)"
     },
     {

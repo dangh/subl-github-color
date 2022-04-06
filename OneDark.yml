@@ -260,7 +260,7 @@ syntax:
     property:
       scope:
         - meta.property.object
-        - meta.mapping.key
+        - meta.mapping.key string - punctuation
         - meta.object-literal.key - meta.binding.name
       foreground: --syntax-color-variable
     operator:
