@@ -52,6 +52,7 @@
     "block_caret_corner_style": "square",
   },
   "rules": [
+    // JavaScript
     {
       "scope": "comment",
       "foreground": "var(--gray)",
@@ -84,10 +85,17 @@
       "scope": "support",
       "foreground": "var(--cyan)",
     },
+    // JSON
+    {
+      "scope": "meta.mapping.key.json string",
+      "foreground": "var(--blue)",
+    },
+    // HTML
     {
       "scope": "entity.name.tag",
       "foreground": "var(--cyan)",
     },
+    // Diff
     {
       "scope": "source.diff meta.header",
       "foreground": "var(--magenta)",
@@ -108,5 +116,19 @@
       "scope": "punctuation.definition.deleted.diff",
       "foreground": "var(--red)",
     },
+    // Markdown
+    {
+      "scope": "markup.raw.code-fence",
+      "foreground": "var(--red)",
+    },
+    {
+      "scope": "meta.link.inline.description",
+      "foreground": "var(--red)",
+    },
+    {
+      "scope": "markup.underline.link",
+      "foreground": "var(--green)",
+      "font_style": "underline",
+    }
   ],
 }
